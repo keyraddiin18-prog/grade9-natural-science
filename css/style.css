@@ -211,3 +211,26 @@ footer {
 .pdf-btn { display: block; text-align: center; background-color: #27ae60; color: white; padding: 12px; text-decoration: none; border-radius: 8px; margin: 20px; font-weight: bold; }
 .back-btn { display: inline-block; margin: 15px; color: var(--primary-color); text-decoration: none; font-weight: bold; }
 .om-text { display: none; }
+
+
+/* Bifa Kutaa Barnootaa Haaraa */
+.objectives-box { background: #e8f4f8; border-left: 5px solid #3498db; padding: 15px; border-radius: 8px; margin-bottom: 20px; }
+.key-terms-table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+.key-terms-table th, .key-terms-table td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+.key-terms-table th { background-color: #f2f2f2; color: #2c3e50; }
+[data-theme="dark"] .key-terms-table th { background-color: #333; color: #fff; border-color: #555; }
+[data-theme="dark"] .key-terms-table td { border-color: #555; }
+
+.summary-box { background: #f9f9f9; border: 1px dashed #27ae60; padding: 15px; border-radius: 8px; margin-bottom: 20px; }
+.exercise-box, .activity-box, .homework-box, .test-box { padding: 15px; border-radius: 8px; margin-bottom: 20px; }
+.exercise-box { background: #fdf2e9; border-left: 5px solid #e67e22; }
+.activity-box { background: #f4ecf7; border-left: 5px solid #8e44ad; }
+.homework-box { background: #fdedec; border-left: 5px solid #e74c3c; }
+.test-box { background: #e8f8f5; border-left: 5px solid #1abc9c; }
+
+[data-theme="dark"] .objectives-box { background: #1a252f; }
+[data-theme="dark"] .summary-box { background: #1e1e1e; }
+[data-theme="dark"] .exercise-box { background: #2c1e14; }
+[data-theme="dark"] .activity-box { background: #20162a; }
+[data-theme="dark"] .homework-box { background: #2c1414; }
+[data-theme="dark"] .test-box { background: #142c28; }

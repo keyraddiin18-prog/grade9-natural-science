@@ -5,156 +5,149 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biology Unit 5 - Grade 9</title>
     <link rel="stylesheet" href="../css/style.css">
-    <style>
-        .quiz-box {
-            background-color: #e8f4f8;
-            border-left: 5px solid #3498db;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 5px;
-        }
-        .quiz-box h4 { color: #2980b9; margin-bottom: 10px; }
-        .quiz-box ol { margin-left: 20px; }
-        .quiz-box li { margin-bottom: 8px; }
-        
-        details {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 10px;
-            margin-top: 20px;
-        }
-        summary {
-            font-weight: bold;
-            cursor: pointer;
-            color: #d35400;
-            padding: 10px;
-            background-color: #fdf2e9;
-            border-radius: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <a href="../index.html" class="back-btn">⬅ Deebi'i (Home)</a>
+    <a href="../index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Deebi'i (Home)</a>
 
     <div style="text-align: center;">
         <button id="langBtn" class="lang-btn" onclick="toggleLanguage()">Afaan Oromoo</button>
     </div>
 
-    <a href="../pdfs/biology-unit-5.pdf" target="_blank" class="pdf-btn">📄 Download PDF (Unit 5)</a>
+    <!-- PDF Button -->
+    <a href="../pdfs/Grade_9_Biology_Unit_5_KEYRADDIIN_MEDIA.pdf" target="_blank" class="pdf-btn">
+        <i class="fa-solid fa-file-pdf"></i> Download PDF (Unit 5)
+    </a>
 
     <div class="unit-content">
         
         <!-- ================== ENGLISH VERSION ================== -->
         <div class="en-text">
-            <h2 class="section-title">1. Food and Nutrition</h2>
-            <p><strong>Food:</strong> Any beneficial substance eaten, drunk, or taken into the body to sustain life, provide energy, and promote growth.</p>
+            <h2 class="section-title">1. Learning Objectives</h2>
+            <div class="objectives-box">
+                <p>After completing this unit, students will be able to:</p>
+                <ul>
+                    <li>Define food, nutrition, and nutrients.</li>
+                    <li>Classify nutrients into macronutrients and micronutrients.</li>
+                    <li>Identify the sources and functions of various vitamins and minerals.</li>
+                    <li>Describe the causes and symptoms of deficiency diseases and malnutrition.</li>
+                    <li>Explain the health risks associated with substance abuse.</li>
+                    <li>Differentiate between infectious and non-infectious diseases.</li>
+                </ul>
+            </div>
+
+            <h2 class="section-title">2. Introduction to Food and Nutrition</h2>
+            <p><strong>Food</strong> is any beneficial substance eaten or drunk to sustain life, provide energy, and promote growth. <strong>Nutrition</strong> is the process of taking in food and converting it into energy and nutrients (Ingestion, Digestion, Absorption, Assimilation).</p>
+
+            <h2 class="section-title">3. Detailed Notes</h2>
+            
+            <h3>Part 1: Nutrients</h3>
             <ul>
-                <li><strong>Importance:</strong> Growth, Energy, Replacement of damaged tissues, Protection from diseases.</li>
-                <li><strong>Nutrition:</strong> The process of taking in food and converting it into energy and nutrients (Ingestion, Digestion, Absorption, Assimilation).</li>
+                <li><strong>Macronutrients:</strong> Needed in large amounts (Carbohydrates, Proteins, Lipids).
+                    <br> - <em>Carbohydrates:</em> Main energy source (1g = 16KJ). Types: Monosaccharides (Glucose), Disaccharides (Sucrose), Polysaccharides (Starch). Fiber prevents constipation.
+                    <br> - <em>Lipids (Fats & Oils):</em> High energy (1g = 37KJ). Fats are solid (animals), Oils are liquid (plants).
+                    <br> - <em>Proteins:</em> Made of amino acids. Contain Nitrogen. For growth and repair.
+                </li>
+                <li><strong>Micronutrients:</strong> Needed in small amounts (Vitamins, Minerals).
+                    <br> - <em>Vitamins:</em> Water-soluble (B, C) and Fat-soluble (A, D, E, K).
+                    <br> - <em>Minerals:</em> Calcium (bones), Iron (hemoglobin), Iodine (thyroid), Phosphorus (bones/teeth).
+                </li>
+                <li><strong>Water:</strong> 60% of adult body. Solvent and transport medium.</li>
             </ul>
 
-            <h2 class="section-title">2. Nutrients</h2>
-            <p><strong>Macronutrients:</strong> Needed in large amounts (Carbohydrates, Proteins, Fats).<br>
-            <strong>Micronutrients:</strong> Needed in small amounts (Vitamins, Minerals).</p>
+            <h3>Part 2: Balanced Diet & Malnutrition</h3>
             <ul>
-                <li><strong>Carbohydrates:</strong> Main energy source (1g = 16KJ). Types: Monosaccharides (Glucose, Fructose, Galactose), Disaccharides (Maltose, Sucrose, Lactose), Polysaccharides (Cellulose, Starch, Glycogen). Fiber prevents constipation.</li>
-                <li><strong>Lipids (Fats & Oils):</strong> High energy (1g = 37KJ). Store energy, insulate, absorb fat-soluble vitamins (A, D, E, K). Fats are solid (animals), Oils are liquid (plants).</li>
-                <li><strong>Proteins:</strong> Made of amino acids. Contain Carbon, Hydrogen, Oxygen, Nitrogen. For growth, repair, and structure.</li>
-                <li><strong>Vitamins:</strong> Organic molecules for metabolic regulation. 
-                    <br>- <em>Water-soluble:</em> B-complex, C.
-                    <br>- <em>Fat-soluble:</em> A, D, E, K.
-                </li>
-                <li><strong>Minerals:</strong> Inorganic substances. Calcium (bones), Iron (hemoglobin), Iodine (thyroid), Phosphorus (bones/teeth).</li>
-                <li><strong>Water:</strong> 60% of adult body. Solvent, transport, temperature regulation.</li>
-            </ul>
-
-            <h2 class="section-title">3. Balanced Diet & Malnutrition</h2>
-            <ul>
-                <li><strong>Balanced Diet:</strong> Contains all nutrients in correct amounts. Depends on age, sex, activity.</li>
-                <li><strong>Deficiency Diseases:</strong> 
-                    <br>- <em>Marasmus:</em> Inadequate carbohydrate/protein (thin, old-looking).
-                    <br>- <em>Kwashiorkor:</em> Inadequate protein (swollen abdomen/legs, flaky skin).
-                    <br>- <em>Anemia:</em> Lack of iron (weak, tired).
-                    <br>- <em>Rickets:</em> Lack of Vitamin D (deformed bones).
-                    <br>- <em>Scurvy:</em> Lack of Vitamin C (bleeding gums).
-                </li>
+                <li><strong>Balanced Diet:</strong> Contains all nutrients in correct amounts.</li>
+                <li><strong>Deficiency Diseases:</strong> Marasmus (lack of carbs/protein), Kwashiorkor (lack of protein), Anemia (lack of iron), Rickets (lack of Vit D), Scurvy (lack of Vit C).</li>
                 <li><strong>Malnutrition:</strong> Insufficient, excessive, or imbalanced nutrients.
-                    <br>- <em>Wasting:</em> Low weight-for-height.
-                    <br>- <em>Stunting:</em> Low height-for-age.
-                    <br>- <em>Underweight:</em> Low weight-for-age (BMI < 18.5).
-                    <br>- <em>Overweight/Obesity:</em> BMI 25-30 / >30. Risk of heart disease, diabetes.
+                    <br> - <em>Wasting:</em> Low weight-for-height.
+                    <br> - <em>Stunting:</em> Low height-for-age.
+                    <br> - <em>Underweight:</em> Low weight-for-age (BMI < 18.5).
+                    <br> - <em>Overweight/Obesity:</em> BMI 25-30 / >30.
                 </li>
             </ul>
 
-            <h2 class="section-title">4. Substance Abuse</h2>
-            <p>Using drugs in the wrong way or excess amount.</p>
+            <h3>Part 3: Substance Abuse</h3>
             <ul>
-                <li><strong>Cigarettes:</strong> Contains Tar (cancer), CO (reduces O2), Nicotine (addictive stimulant).</li>
-                <li><strong>Alcohol:</strong> Depressant. Causes loss of coordination, liver cirrhosis, brain damage.</li>
-                <li><strong>Heroin:</strong> Synthetic morphine derivative. Powerful depressant, highly addictive.</li>
-                <li><strong>Cannabis (Marijuana):</strong> Contains THC. Causes hallucinations, panic, psychosis in high amounts.</li>
-                <li><strong>Khat (Catha edulis):</strong> Contains cathinone (stimulant). Causes depression when not used, socio-economic issues.</li>
-                <li><strong>Doping:</strong> Using prohibited substances in sports (banned by WADA). Risks: heart disease, infertility, psychosis.</li>
+                <li><strong>Cigarettes:</strong> Tar (cancer), CO (reduces O2), Nicotine (addictive).</li>
+                <li><strong>Alcohol:</strong> Depressant. Causes liver cirrhosis, brain damage.</li>
+                <li><strong>Heroin:</strong> Powerful depressant, highly addictive.</li>
+                <li><strong>Cannabis:</strong> Contains THC. Causes hallucinations in high amounts.</li>
+                <li><strong>Khat (Catha edulis):</strong> Contains cathinone (stimulant). Causes socio-economic and health issues.</li>
+                <li><strong>Doping:</strong> Prohibited substances in sports (banned by WADA). Risks: heart disease, infertility, psychosis.</li>
             </ul>
 
-            <h2 class="section-title">5. Infectious and Non-Infectious Diseases</h2>
+            <h3>Part 4: Infectious and Non-Infectious Diseases</h3>
             <ul>
-                <li><strong>Infectious Diseases:</strong> Caused by pathogens (bacteria, virus, protozoa, fungi). Transmitted via contact, water, insects.
-                    <br>- <em>HIV/AIDS:</em> Attacks CD4 (T cells). Transmitted via blood/fluids. No cure, but ART controls it.
-                    <br>- <em>Tuberculosis (TB):</em> Mycobacterium tuberculosis. Affects lungs. Droplet transmission. BCG vaccine.
-                    <br>- <em>Malaria:</em> Plasmodium spp. Vector: Anopheles mosquito.
-                    <br>- <em>COVID-19:</em> SARS-CoV-2. Respiratory droplets.
+                <li><strong>Infectious:</strong> Caused by pathogens (bacteria, virus, protozoa, fungi). Transmitted via contact, water, insects.
+                    <br> - <em>HIV/AIDS:</em> Attacks CD4 (T cells). Transmitted via blood/fluids. ART controls it.
+                    <br> - <em>Tuberculosis (TB):</em> Mycobacterium tuberculosis. Affects lungs. BCG vaccine.
+                    <br> - <em>Malaria:</em> Plasmodium spp. Vector: Anopheles mosquito.
+                    <br> - <em>COVID-19:</em> SARS-CoV-2. Respiratory droplets.
                 </li>
-                <li><strong>Non-Infectious Diseases:</strong> Not caused by pathogens. 
-                    <br>- Malnutrition (Scurvy, Kwashiorkor).
-                    <br>- Cigarette smoke (Lung cancer, Bronchitis).
-                    <br>- Genetic factors (Sickle cell anemia, Hemophilia).
-                    <br>- Unhealthy diets (Obesity, High BP).
-                    <br>- Old age (Osteoporosis, Arthritis, Alzheimer's).
+                <li><strong>Non-Infectious:</strong> Not caused by pathogens.
+                    <br> - Malnutrition (Scurvy), Cigarette smoke (Lung cancer), Genetic factors (Sickle cell anemia), Unhealthy diets (Obesity), Old age (Osteoporosis).
                 </li>
             </ul>
 
-            <h2 class="section-title">6. Glossary of Terms</h2>
-            <p><strong>Absorption:</strong> Uptake of nutrients into the bloodstream.<br>
-            <strong>AIDS:</strong> Acquired Immune Deficiency Syndrome.<br>
-            <strong>Anemia:</strong> Low hemoglobin/red blood cells.<br>
-            <strong>Assimilation:</strong> Conversion of nutrients into specific molecules.<br>
-            <strong>Balanced diet:</strong> Diet with 6 essential nutrients in proper amounts.<br>
-            <strong>BMI:</strong> Body mass (kg) / Height (m²).<br>
-            <strong>Calorie:</strong> Measure of energy in food.<br>
-            <strong>Carbohydrates:</strong> Major energy source (CH2O).<br>
-            <strong>Cirrhosis:</strong> Chronic liver injury (often alcohol).<br>
-            <strong>Deficiency diseases:</strong> Health issues from lack of specific nutrients.<br>
-            <strong>Depressant:</strong> Drug that reduces functional activity.<br>
-            <strong>Digestion:</strong> Breakdown of food.<br>
-            <strong>Disease:</strong> Body does not function normally.<br>
-            <strong>Doping:</strong> Using banned substances to enhance sports performance.<br>
-            <strong>Drug:</strong> Substance that changes chemical reactions in the body.<br>
-            <strong>Fats:</strong> High-energy lipid molecules.<br>
-            <strong>Fiber:</strong> Indigestible polysaccharides that aid digestion.<br>
-            <strong>Fructose:</strong> Fruit sugar.<br>
-            <strong>Glucose:</strong> Blood sugar, main energy building block.<br>
-            <strong>HIV:</strong> Virus that attacks the immune system.<br>
-            <strong>Ingestion:</strong> Taking food into the body.<br>
-            <strong>Joule:</strong> Unit of energy.<br>
-            <strong>Khat:</strong> Stimulant plant chewed in East Africa.<br>
-            <strong>Kwashiorkor:</strong> Protein deficiency disease.<br>
-            <strong>Macronutrients:</strong> Needed in large amounts (Carbs, Fats, Protein).<br>
-            <strong>Malnutrition:</strong> Insufficient, excessive, or imbalanced nutrients.<br>
-            <strong>Marasmus:</strong> Deficiency of calories and protein.<br>
-            <strong>Micronutrients:</strong> Needed in small amounts (Vitamins, Minerals).<br>
-            <strong>Nutrition:</strong> Process of taking in and using food.<br>
-            <strong>Obesity:</strong> Excess body fat (BMI > 30).<br>
-            <strong>Proteins:</strong> Polymers of amino acids for structure and function.<br>
-            <strong>Rickets:</strong> Vitamin D deficiency causing weak bones.<br>
-            <strong>Scurvy:</strong> Vitamin C deficiency.<br>
-            <strong>Stunting:</strong> Low height-for-age.<br>
-            <strong>Substance abuse:</strong> Harmful use of psychoactive substances.<br>
-            <strong>Vitamins:</strong> Organic molecules needed in small amounts.</p>
+            <h2 class="section-title">4. Key Terms</h2>
+            <table class="key-terms-table">
+                <tr><th>Term</th><th>Meaning</th></tr>
+                <tr><td>Nutrition</td><td>Process of taking in and using food.</td></tr>
+                <tr><td>Macronutrients</td><td>Nutrients needed in large amounts (Carbs, Proteins, Fats).</td></tr>
+                <tr><td>Micronutrients</td><td>Nutrients needed in small amounts (Vitamins, Minerals).</td></tr>
+                <tr><td>Deficiency Disease</td><td>Health condition caused by lack of a specific nutrient.</td></tr>
+                <tr><td>BMI</td><td>Body mass (kg) / Height (m²).</td></tr>
+                <tr><td>Substance Abuse</td><td>Harmful use of psychoactive substances.</td></tr>
+                <tr><td>Infectious Disease</td><td>Disease caused by pathogens (transmissible).</td></tr>
+            </table>
+
+            <h2 class="section-title">5. Summary</h2>
+            <div class="summary-box">
+                <ul>
+                    <li>Food provides energy, growth, repair, and protection.</li>
+                    <li>A balanced diet includes all macronutrients and micronutrients.</li>
+                    <li>Malnutrition includes both undernutrition (stunting, wasting) and overnutrition (obesity).</li>
+                    <li>Substance abuse (smoking, alcohol, drugs) has severe health consequences.</li>
+                    <li>Diseases are classified as infectious (transmissible) or non-infectious (genetic, lifestyle, age).</li>
+                </ul>
+            </div>
+
+            <h2 class="section-title">6. Exercise</h2>
+            <div class="exercise-box">
+                <p><strong>Multiple Choice:</strong> Which of the following is a micronutrient?</p>
+                <p>A) Fats <br> B) Protein <br> C) Vitamin C <br> D) Carbohydrates</p>
+                <p><strong>Multiple Choice:</strong> Which disease is caused by a lack of Vitamin C?</p>
+                <p>A) Scurvy <br> B) Rickets <br> C) Anemia <br> D) Kwashiorkor</p>
+            </div>
+
+            <h2 class="section-title">7. Activity</h2>
+            <div class="activity-box">
+                <p>Work in small groups. Create a one-day balanced diet menu for a Grade 9 student. Include local Ethiopian foods for breakfast, lunch, and dinner, and explain why each is important.</p>
+            </div>
+
+            <h2 class="section-title">8. Homework</h2>
+            <div class="homework-box">
+                <p>Research and write a short report (1 page) on the health effects of chewing Khat. Include physical, psychological, and social consequences.</p>
+            </div>
+
+            <h2 class="section-title">9. Unit Test</h2>
+            <div class="test-box">
+                <p><strong>Part I: Short Answer</strong></p>
+                <ol>
+                    <li>Differentiate between infectious and non-infectious diseases. Give one example of each.</li>
+                    <li>What is the main cause of Kwashiorkor and what are its symptoms?</li>
+                    <li>How is HIV transmitted from person to person?</li>
+                </ol>
+                <p><strong>Part II: True or False</strong></p>
+                <ol>
+                    <li>Malaria is caused by a virus. (___)</li>
+                    <li>Obesity is a form of malnutrition. (___)</li>
+                </ol>
+            </div>
 
             <details>
-                <summary>Click to View 70 Review Questions & Answers</summary>
+                <summary><strong>Review Questions (70 Questions & Answers)</strong></summary>
                 <div class="quiz-box">
                     <ol>
                         <li>What is food? <br><strong>A: D. A substance that sustains life and provides energy</strong></li>
@@ -234,114 +227,131 @@
 
         <!-- ================== AFAAN OROMOO VERSION ================== -->
         <div class="om-text">
-            <h2 class="section-title">1. Nyaata fi Sirna Nyaataa (Food and Nutrition)</h2>
-            <p><strong>Nyaata (Food):</strong> Wantoota faayidaa qaban kanneen lubbuu itti fufsiisuuf, humna kennuuf fi guddinaaf qaama keessa galfaman.</p>
+            <h2 class="section-title">1. Kaayyoo Barnootaa (Learning Objectives)</h2>
+            <div class="objectives-box">
+                <p>Erga kutaa kana xumurani booda, barattoonni:</p>
+                <ul>
+                    <li>Nyaata, sirna nyaataa fi soorata hiikanii ibsuu ni danda'u.</li>
+                    <li>Soorata gara macronutrients fi micronutrientsitti ramaduu ni danda'u.</li>
+                    <li>Madda fi hojii vitamins fi minerals adda addaa adda baasuu ni danda'u.</li>
+                    <li>Sababaa fi mallattoo dhukkuboota hanqina soorataa fi hanga nyaataa ibsuu ni danda'u.</li>
+                    <li>Balaa fayyaa fayyadama qoricha badaa waliin walqabatu ibsuu ni danda'u.</li>
+                    <li>Dhukkuboota daddarbanii fi hin daddarbne gidduu garaagarummaa adda baasuu ni danda'u.</li>
+                </ul>
+            </div>
+
+            <h2 class="section-title">2. Seensa Nyaata fi Sirna Nyaataa (Introduction)</h2>
+            <p><strong>Nyaanni</strong> wantoota faayidaa qaban kanneen lubbuu itti fufsiisuuf, humna kennuuf fi guddinaaf qaama keessa galfaman. <strong>Sirni Nyaataa</strong> adeemsa nyaata fudhachuu fi gara humnaatti jijjiiruu (Liqimsuu, Daakuu, Xuuxuu, Gara seelii geessuu).</p>
+
+            <h2 class="section-title">3. Yaadannoo Barnootaa (Detailed Notes)</h2>
+            
+            <h3>Kutaa 1: Soorata (Nutrients)</h3>
             <ul>
-                <li><strong>Faayidaa:</strong> Guddina, Humna, Seelii miidhame bakka buusuu, Dhukkuboota irraa eeguu.</li>
-                <li><strong>Sirna Nyaataa (Nutrition):</strong> Adeemsa nyaata fudhachuu fi gara humnaatti jijjiiruu (Liqimsuu, Daakuu, Xuuxuu, Gara seelii geessuu).</li>
+                <li><strong>Macronutrients:</strong> Baay'inaan barbaachisan (Karbohayidreeitii, Pirootiinii, Cooma).
+                    <br> - <em>Karbohayidreeitii:</em> Madda humna ijoo (1g = 16KJ). Gosa: Monosaccharides (Glucose), Disaccharides (Sucrose), Polysaccharides (Starch). Fiber garaa cimuu dhoorka.
+                    <br> - <em>Liipiidii (Cooma fi Zayitii):</em> Humna olkaa'aa (1g = 37KJ). Coomni jabaa (bineensa), zayitiin dhangala'aa (biqiltuu).
+                    <br> - <em>Pirootiinii:</em> Amino acids irraa ijaarama. Nitrogen qaba. Guddina fi suphaa seelii.
+                </li>
+                <li><strong>Micronutrients:</strong> Muraasa barbaachisan (Vitamins, Minerals).
+                    <br> - <em>Vitamins:</em> Bishaan keessa bulbulu (B, C) fi Cooma keessa bulbulu (A, D, E, K).
+                    <br> - <em>Minerals:</em> Calcium (lafee), Iron (dhiiga), Iodine (thyroid), Phosphorus (lafee/ilkaan).
+                </li>
+                <li><strong>Bishaan:</strong> Qaama nama guddaa 60% ta'a. Wantoota bulbulu fi geejjibu.</li>
             </ul>
 
-            <h2 class="section-title">2. Soorata (Nutrients)</h2>
-            <p><strong>Macronutrients:</strong> Baay'inaan barbaachisan (Karbohayidreeitii, Pirootiinii, Cooma).<br>
-            <strong>Micronutrients:</strong> Muraasa barbaachisan (Vitamins, Minerals).</p>
+            <h3>Kutaa 2: Sirna Nyaata Madaalawaa fi Hanga Nyaataa</h3>
             <ul>
-                <li><strong>Karbohayidreeitii:</strong> Madda humna ijoo (1g = 16KJ). Gosa isaa: Monosaccharides (Glucose, Fructose, Galactose), Disaccharides (Maltose, Sucrose, Lactose), Polysaccharides (Cellulose, Starch, Glycogen). Fiber (roughage) garaa cimuu dhoorka.</li>
-                <li><strong>Liipiidii (Cooma fi Zayitii):</strong> Humna olkaa'aa (1g = 37KJ). Humna kuusa, qaama ho'isa, vitamins A, D, E, K xuuxuuf gargaara. Coomni jabaa (bineensa), zayitiin dhangala'aa (biqiltuu).</li>
-                <li><strong>Pirootiinii:</strong> Amino acids irraa ijaarama. Carbon, Hydrogen, Oxygen, Nitrogen qaba. Guddina, suphaa fi caasaa seelii.</li>
-                <li><strong>Vitamins:</strong> Molekiyuloota orgaanikii sochii metaboolizimii to'atan. 
-                    <br>- <em>Bishaan keessa bulbulu:</em> B-complex, C.
-                    <br>- <em>Cooma keessa bulbulu:</em> A, D, E, K.
-                </li>
-                <li><strong>Minerals:</strong> Wantoota orgaanikii hin taane. Calcium (lafee), Iron (dhiiga), Iodine (thyroid), Phosphorus (lafee/ilkaan).</li>
-                <li><strong>Bishaan:</strong> Qaama nama guddaa 60% ta'a. Wantoota bulbulu, geejjibu, ho'ina qaamaa to'ata.</li>
-            </ul>
-
-            <h2 class="section-title">3. Sirna Nyaata Madaalawaa fi Hanga Nyaataa (Balanced Diet & Malnutrition)</h2>
-            <ul>
-                <li><strong>Sirna Nyaata Madaalawaa:</strong> Soorata hunda baay'ina sirriin qabata. Umrii, saala, sochii irratti hundaa'a.</li>
-                <li><strong>Dhukkuboota Hanqina Soorataa (Deficiency Diseases):</strong> 
-                    <br>- <em>Marasmus:</em> Hanqina karbohayidreeitii/pirootiinii (huqqisaa, fuulli dulloomaa).
-                    <br>- <em>Kwashiorkor:</em> Hanqina pirootiinii (garaan fi miilli dhiita'a, gogaa gogaa).
-                    <br>- <em>Anemia:</em> Hanqina sibiilaa (dadhabbii, tiruu).
-                    <br>- <em>Rickets:</em> Hanqina Vitamin D (lafeen badaa'aa).
-                    <br>- <em>Scurvy:</em> Hanqina Vitamin C (lafeen gumaa dhiigu).
-                </li>
+                <li><strong>Sirna Nyaata Madaalawaa:</strong> Soorata hunda baay'ina sirriin qabata.</li>
+                <li><strong>Dhukkuboota Hanqina Soorataa:</strong> Marasmus (hanqina carb/protein), Kwashiorkor (hanqina protein), Anemia (hanqina iron), Rickets (hanqina Vit D), Scurvy (hanqina Vit C).</li>
                 <li><strong>Hanga Nyaataa (Malnutrition):</strong> Nyaata gahaa dhabuu, dabaluu ykn madaallii dhabuu.
-                    <br>- <em>Wasting:</em> Ulfina dheerinaaf gadi aanaa.
-                    <br>- <em>Stunting:</em> Dheerina umriif gadi aanaa.
-                    <br>- <em>Underweight:</em> Ulfina umriif gadi aanaa (BMI < 18.5).
-                    <br>- <em>Overweight/Obesity:</em> BMI 25-30 / >30. Dhukkuba onnee, sukkaara dhiitaa (diabetes) fiduu danda'a.
+                    <br> - <em>Wasting:</em> Ulfina dheerinaaf gadi aanaa.
+                    <br> - <em>Stunting:</em> Dheerina umriif gadi aanaa.
+                    <br> - <em>Underweight:</em> Ulfina umriif gadi aanaa (BMI < 18.5).
+                    <br> - <em>Overweight/Obesity:</em> BMI 25-30 / >30.
                 </li>
             </ul>
 
-            <h2 class="section-title">4. Fayyadama Qoricha Badaa (Substance Abuse)</h2>
-            <p>Qoricha karaa dogoggora ykn baay'inaan fayyadamuu.</p>
+            <h3>Kutaa 3: Fayyadama Qoricha Badaa (Substance Abuse)</h3>
             <ul>
-                <li><strong>Sijaaraa:</strong> Tar (kanserii), CO (O2 hir'isa), Nicotine (addictive stimulant) qaba.</li>
-                <li><strong>Alkoolii:</strong> Depressant. Madaallii dhabuu, tiruu (cirrhosis), sammuu miidha.</li>
-                <li><strong>Heroin:</strong> Morphine irraa hojjetame. Depressant cimaa, addictive.</li>
-                <li><strong>Cannabis (Marijuana):</strong> THC qaba. Baay'inaan yoo fayyadame hallucination, panic, psychosis fidu.</li>
-                <li><strong>Jimaa (Khat):</strong> Cathinone (stimulant) qaba. Yoo dhaabne depression, rakkoo hawaasummaa fi dinagdee fidu.</li>
+                <li><strong>Sijaaraa:</strong> Tar (kanserii), CO (O2 hir'isa), Nicotine (addictive).</li>
+                <li><strong>Alkoolii:</strong> Depressant. Tiruu (cirrhosis), sammuu miidha.</li>
+                <li><strong>Heroin:</strong> Depressant cimaa, addictive.</li>
+                <li><strong>Cannabis:</strong> THC qaba. Baay'inaan yoo fayyadame hallucination fidu.</li>
+                <li><strong>Jimaa (Khat):</strong> Cathinone (stimulant) qaba. Rakkoo hawaasummaa fi dinagdee fidu.</li>
                 <li><strong>Doping:</strong> Ispoortii keessatti wantoota dhorkaman fayyadamuu (WADA dhoorka). Balaa: dhukkuba onnee, maseena, psychosis.</li>
             </ul>
 
-            <h2 class="section-title">5. Dhukkuboota Daddarbanii fi Hin Daddarbne (Infectious & Non-Infectious)</h2>
+            <h3>Kutaa 4: Dhukkuboota Daddarbanii fi Hin Daddarbne</h3>
             <ul>
-                <li><strong>Dhukkuboota Daddarban (Infectious):</strong> Paatojeenoota (baakteeriyaa, vaayirasii, protozoa, faanjii) irraa dhufu. Quunnamtii, bishaan, ilbiisaan daddarbu.
-                    <br>- <em>HIV/AIDS:</em> Seelii nageenyaa (CD4/T cells) miidha. Dhiigaan/dhangala'aan daddarba. Qorichi hin jiru, garuu ART waliin jiraachuu danda'a.
-                    <br>- <em>Tuberculosis (TB):</em> Mycobacterium tuberculosis. Somba miidha. Haaraan daddarba. Talaallii BCG.
-                    <br>- <em>Malaria:</em> Plasmodium spp. Vector: Bookee Anopheles.
-                    <br>- <em>COVID-19:</em> SARS-CoV-2. Haaraan daddarba.
+                <li><strong>Dhukkuboota Daddarban (Infectious):</strong> Paatojeenoota (baakteeriyaa, vaayirasii, protozoa, faanjii) irraa dhufu.
+                    <br> - <em>HIV/AIDS:</em> Seelii nageenyaa (CD4/T cells) miidha. ART waliin jiraachuu danda'a.
+                    <br> - <em>Tuberculosis (TB):</em> Mycobacterium tuberculosis. Somba miidha. Talaallii BCG.
+                    <br> - <em>Malaria:</em> Plasmodium spp. Vector: Bookee Anopheles.
+                    <br> - <em>COVID-19:</em> SARS-CoV-2. Haaraan daddarba.
                 </li>
-                <li><strong>Dhukkuboota Hin Daddarbne (Non-Infectious):</strong> Paatojeenootaan hin dhufan. 
-                    <br>- Hanga nyaataa (Scurvy, Kwashiorkor).
-                    <br>- Aara sijaaraa (Kanserii sombaa, Bronchitis).
-                    <br>- Jeneetiksii (Sickle cell anemia, Hemophilia).
-                    <br>- Nyaata gadhee (Obesity, High BP).
-                    <br>- Umurii dulluma (Osteoporosis, Arthritis, Alzheimer's).
+                <li><strong>Dhukkuboota Hin Daddarbne (Non-Infectious):</strong> Paatojeenootaan hin dhufan.
+                    <br> - Hanga nyaataa (Scurvy), Aara sijaaraa (Kanserii sombaa), Jeneetiksii (Sickle cell anemia), Nyaata gadhee (Obesity), Umurii dulluma (Osteoporosis).
                 </li>
             </ul>
 
-            <h2 class="section-title">6. Galmee Jechoota (Glossary)</h2>
-            <p><strong>Absorption:</strong> Xuuxuu soorataa dhiiga keessa.<br>
-            <strong>AIDS:</strong> Dhukkuba nageenya qaamaa cimsee miidhu.<br>
-            <strong>Anemia:</strong> Dhiigni/hemoglobin xiqqaachuu.<br>
-            <strong>Assimilation:</strong> Soorata gara molekiyulii addaatti jijjiiruu.<br>
-            <strong>Balanced diet:</strong> Nyaata soorata 6 sirriitti qabu.<br>
-            <strong>BMI:</strong> Ulfina (kg) / Dheerina (m²).<br>
-            <strong>Calorie:</strong> Safartuu humna nyaataa.<br>
-            <strong>Carbohydrates:</strong> Madda humna ijoo (CH2O).<br>
-            <strong>Cirrhosis:</strong> Tiruu miidhamuu (alkooliin).<br>
-            <strong>Deficiency diseases:</strong> Dhukkuba hanqina soorataa.<br>
-            <strong>Depressant:</strong> Qoricha sochii qaamaa hir'isu.<br>
-            <strong>Digestion:</strong> Nyaata daakuu.<br>
-            <strong>Disease:</strong> Qaamni akka barbaachisaa ta'een hojjechuu dadhabuu.<br>
-            <strong>Doping:</strong> Ispoortii keessatti qoricha dhorkamaa fayyadamuu.<br>
-            <strong>Drug:</strong> Wantoota sochii keemikaalaa qaamaa jijjiiran.<br>
-            <strong>Fats:</strong> Molekiyulii liipiidii humna olkaa'aa.<br>
-            <strong>Fiber:</strong> Nyaata daakamuu hin dandeenye garaa gargaaru.<br>
-            <strong>Fructose:</strong> Sukkaara fuduraa.<br>
-            <strong>Glucose:</strong> Sukkaara dhiigaa, madda humnaa.<br>
-            <strong>HIV:</strong> Vaayirasii nageenya qaamaa miidhu.<br>
-            <strong>Ingestion:</strong> Nyaata qaama keessa galchuu.<br>
-            <strong>Joule:</strong> Safartuu humnaa.<br>
-            <strong>Khat:</strong> Biqiltuu stimulantii fiixee Itiyoophiyaa.<br>
-            <strong>Kwashiorkor:</strong> Dhukkuba hanqina pirootiinii.<br>
-            <strong>Macronutrients:</strong> Baay'inaan barbaachisan (Carbs, Fats, Protein).<br>
-            <strong>Malnutrition:</strong> Nyaata gahaa dhabuu, dabaluu ykn madaallii dhabuu.<br>
-            <strong>Marasmus:</strong> Hanqina calorie fi pirootiinii.<br>
-            <strong>Micronutrients:</strong> Muraasa barbaachisan (Vitamins, Minerals).<br>
-            <strong>Nutrition:</strong> Adeemsa nyaata fudhachuu fi itti fayyadamuu.<br>
-            <strong>Obesity:</strong> Cooma qaamaa baay'isuu (BMI > 30).<br>
-            <strong>Proteins:</strong> Amino acids irraa ijaaraman, caasaa fi hojii seelii.<br>
-            <strong>Rickets:</strong> Hanqina Vitamin D, lafee laafaa.<br>
-            <strong>Scurvy:</strong> Hanqina Vitamin C.<br>
-            <strong>Stunting:</strong> Dheerina umriif gadi aanaa.<br>
-            <strong>Substance abuse:</strong> Qoricha badaa fayyadamuu.<br>
-            <strong>Vitamins:</strong> Molekiyuloota orgaanikii muraasa barbaachisan.</p>
+            <h2 class="section-title">4. Jechoota Ijoo (Key Terms)</h2>
+            <table class="key-terms-table">
+                <tr><th>Jecha</th><th>Hiika</th></tr>
+                <tr><td>Nutrition</td><td>Adeemsa nyaata fudhachuu fi itti fayyadamuu.</td></tr>
+                <tr><td>Macronutrients</td><td>Baay'inaan barbaachisan (Carbs, Proteins, Fats).</td></tr>
+                <tr><td>Micronutrients</td><td>Muraasa barbaachisan (Vitamins, Minerals).</td></tr>
+                <tr><td>Deficiency Disease</td><td>Dhukkuba hanqina soorataa irraa dhufu.</td></tr>
+                <tr><td>BMI</td><td>Ulfina (kg) / Dheerina (m²).</td></tr>
+                <tr><td>Substance Abuse</td><td>Qoricha badaa fayyadamuu.</td></tr>
+                <tr><td>Infectious Disease</td><td>Dhukkuba paatojeeniin daddarbu.</td></tr>
+            </table>
+
+            <h2 class="section-title">5. Cuunfaa (Summary)</h2>
+            <div class="summary-box">
+                <ul>
+                    <li>Nyaanni humna, guddina, suphaa fi eegumsa kennu.</li>
+                    <li>Sirni nyaata madaalawaa macronutrients fi micronutrients hunda of keessatti qabata.</li>
+                    <li>Hangi nyaataa hanqina (stunting, wasting) fi dabalata (obesity) of keessatti qabata.</li>
+                    <li>Fayyadamni qoricha badaa (sijaaraa, alkoolii, qoricha) balaa fayyaa cimaa qaba.</li>
+                    <li>Dhukkuboonni daddarbanii fi hin daddarbne jedhamanii ramadamu.</li>
+                </ul>
+            </div>
+
+            <h2 class="section-title">6. Shaakala (Exercise)</h2>
+            <div class="exercise-box">
+                <p><strong>Filannoo:</strong> Kan armaan gadii keessaa kam micronutrient dha?</p>
+                <p>A) Cooma <br> B) Pirootiinii <br> C) Vitamin C <br> D) Karbohayidreeitii</p>
+                <p><strong>Filannoo:</strong> Dhukkubni hanqina Vitamin C irraa dhufu kami?</p>
+                <p>A) Scurvy <br> B) Rickets <br> C) Anemia <br> D) Kwashiorkor</p>
+            </div>
+
+            <h2 class="section-title">7. Hojii Shaakalaa (Activity)</h2>
+            <div class="activity-box">
+                <p>Gareen xiqqaatti hojjedhaa. Barataa Kutaa 9ffaaf sirna nyaata madaalawaa guyyaa tokkoof qopheessaa. Nyaata Itoophiyaa beekamaa (fkn: buddeena, shiro, misira) idil-addunyaa, laaqanaa fi irbaataaf dabalataa, maaliif akka barbaachisan ibsaa.</p>
+            </div>
+
+            <h2 class="section-title">8. Hojii Manaa (Homework)</h2>
+            <div class="homework-box">
+                <p>Gabaasa gabaabaa (fuula 1) qorannoo fayyadama jimaa irratti barreessi. Miidhaa qaamaa, sammuu fi hawaasummaa isaa ibsi.</p>
+            </div>
+
+            <h2 class="section-title">9. Qormaata Unit (Unit Test)</h2>
+            <div class="test-box">
+                <p><strong>Kutaa I: Deebii Gabaabaa</strong></p>
+                <ol>
+                    <li>Dhukkuboota daddarbanii fi hin daddarbne gidduu garaagarummaa ibsi. Tokkoon tokkoon isaaniif fakkeenya kenni.</li>
+                    <li>Sababni guddaan dhukkuba Kwashiorkor maali, mallattoon isaas maali?</li>
+                    <li>HIV akkamitti nama tokko irraa gara nama biraatti daddarba?</li>
+                </ol>
+                <p><strong>Kutaa II: Dhugaa ykn Soba</strong></p>
+                <ol>
+                    <li>Malaria vaayirasii irraa dhufa. (___)</li>
+                    <li>Obesity hanga nyaataa gosa tokko ti. (___)</li>
+                </ol>
+            </div>
 
             <details>
-                <summary>Gaaffiiwwan Shaakalaa 70 fi Deebii isaanii Ilaaluuf Tuqi</summary>
+                <summary><strong>Gaaffiiwwan Shaakalaa (70 fi Deebii isaanii)</strong></summary>
                 <div class="quiz-box">
                     <ol>
                         <li>Nyaata maali? <br><strong>D: D. Lubbuu itti fufsiisu fi humna kennu</strong></li>

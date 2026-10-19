@@ -5,149 +5,157 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biology Unit 4 - Grade 9</title>
     <link rel="stylesheet" href="../css/style.css">
-    <style>
-        .quiz-box {
-            background-color: #e8f4f8;
-            border-left: 5px solid #3498db;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 5px;
-        }
-        .quiz-box h4 { color: #2980b9; margin-bottom: 10px; }
-        .quiz-box ol { margin-left: 20px; }
-        .quiz-box li { margin-bottom: 8px; }
-        
-        details {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 10px;
-            margin-top: 20px;
-        }
-        summary {
-            font-weight: bold;
-            cursor: pointer;
-            color: #d35400;
-            padding: 10px;
-            background-color: #fdf2e9;
-            border-radius: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <a href="../index.html" class="back-btn">⬅ Deebi'i (Home)</a>
+    <a href="../index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Deebi'i (Home)</a>
 
     <div style="text-align: center;">
         <button id="langBtn" class="lang-btn" onclick="toggleLanguage()">Afaan Oromoo</button>
     </div>
 
-    <a href="../pdfs/biology-unit-4.pdf" target="_blank" class="pdf-btn">📄 Download PDF (Unit 4)</a>
+    <!-- PDF Button -->
+    <a href="../pdfs/Grade_9_Biology_Unit_4_KEYRADDIIN_MEDIA.pdf" target="_blank" class="pdf-btn">
+        <i class="fa-solid fa-file-pdf"></i> Download PDF (Unit 4)
+    </a>
 
     <div class="unit-content">
         
         <!-- ================== ENGLISH VERSION ================== -->
         <div class="en-text">
-            <h2 class="section-title">1. Introduction to Reproduction</h2>
-            <p>Reproduction is the process by which parents produce offspring, ensuring the continuation of the species.</p>
+            <h2 class="section-title">1. Learning Objectives</h2>
+            <div class="objectives-box">
+                <p>After completing this unit, students will be able to:</p>
+                <ul>
+                    <li>Differentiate between asexual and sexual reproduction.</li>
+                    <li>Describe various methods of asexual reproduction (Fission, Budding, Vegetative propagation, etc.).</li>
+                    <li>Identify male and female reproductive structures and their functions.</li>
+                    <li>Explain the changes during puberty and the role of hormones.</li>
+                    <li>Describe the menstrual cycle, fertilization, and pregnancy.</li>
+                    <li>List methods of birth control and sexually transmitted infections (STIs).</li>
+                </ul>
+            </div>
+
+            <h2 class="section-title">2. Introduction</h2>
+            <p>Reproduction is the biological process by which parents produce offspring, ensuring the continuation of the species. It can be <strong>Asexual</strong> (one parent, identical offspring) or <strong>Sexual</strong> (two parents, genetic variation).</p>
+
+            <h2 class="section-title">3. Detailed Notes</h2>
+            
+            <h3>Part 1: Asexual Reproduction</h3>
             <ul>
-                <li><strong>Asexual Reproduction:</strong> Offspring are produced by one parent only. No special reproductive organs/cells. Produces identical copies. Advantages: No need for two sex cells, offspring inherit favourable traits, ensures survival in the same environment.</li>
-                <li><strong>Sexual Reproduction:</strong> Involves two parents and mixes their genetic material. Each parent contributes special germ cells (gametes) that unite (fertilization) to develop into a new individual.</li>
+                <li><strong>Fission:</strong> Division into two or more equal parts.
+                    <br> - <em>Binary fission:</em> Parent cell divides into two identical cells (e.g., Bacteria).
+                    <br> - <em>Multiple fission:</em> Nucleus divides repeatedly into many cells (e.g., Malarial parasite).
+                </li>
+                <li><strong>Fragmentation:</strong> Parent breaks into parts that grow into new individuals (e.g., Fungi, Spirogyra).</li>
+                <li><strong>Budding:</strong> Outgrowth forms and pinches off (e.g., Yeast, Hydra).</li>
+                <li><strong>Sporulation:</strong> Formation of spores (e.g., Fungi).</li>
+                <li><strong>Vegetative Propagation:</strong> New plants from roots, stems, or leaves.
+                    <br> - <em>Natural:</em> Stolons (Strawberry), Rhizome (Couch grass), Corm (Gladiolus), Tubers (Potato), Bulb (Onion).
+                    <br> - <em>Artificial:</em> Grafting (Scion + Stock), Cutting (Hibiscus), Layering.
+                </li>
+                <li><strong>Parthenogenesis:</strong> Unfertilized egg develops into an organism (e.g., Drones in honeybees).</li>
             </ul>
 
-            <h2 class="section-title">2. Asexual Reproduction Types</h2>
+            <h3>Part 2: Sexual Reproduction & Puberty</h3>
             <ul>
-                <li><strong>Fission:</strong> Division of an organism into two or more equal parts.
-                    <br>- <em>Binary fission:</em> Splitting of a parent cell into two identical daughter cells (e.g., bacteria, protozoa).
-                    <br>- <em>Multiple fission:</em> Nucleus divides repeatedly to produce many daughter cells (e.g., malarial parasites).
-                </li>
-                <li><strong>Fragmentation:</strong> Parent breaks into parts that regenerate into whole new individuals (e.g., fungi, worms, Spirogyra).</li>
-                <li><strong>Budding:</strong> Outgrowth (bud) forms on the parent and pinches off (e.g., yeast, Hydra).</li>
-                <li><strong>Sporulation:</strong> Formation of spores (reproductive cells) (e.g., most fungi).</li>
-                <li><strong>Vegetative Propagation:</strong> Roots, stems, buds, or leaves give rise to new plants.
-                    <br>- <em>Natural:</em> Stolons (Strawberry), Rhizome (Couch grass), Corm (Gladiolus), Tubers (Potato), Bulb (Lilies/onion).
-                    <br>- <em>Artificial:</em> Grafting (Scion + Stock), Cutting (Hibiscus), Layering.
-                </li>
-                <li><strong>Parthenogenesis:</strong> Reproduction from an ovum without fertilization (e.g., honeybees: unfertilized egg develops into a drone/male).</li>
+                <li><strong>Primary characteristics:</strong> Present at birth (Penis, Testis; Vagina, Uterus, Ovaries).</li>
+                <li><strong>Secondary characteristics:</strong> Develop during puberty (Body hair, muscle mass, deep voice in males; breasts, wide hips, menstruation in females).</li>
+                <li><strong>Hormones:</strong> FSH and LH (from pituitary) control ovaries/testes. Testosterone drives male traits; Estrogen drives female traits.</li>
             </ul>
 
-            <h2 class="section-title">3. Sexual Reproduction & Puberty</h2>
-            <p>Involves fusion of gametes (sperm and egg) made via meiosis. Fertilization results in a zygote.</p>
+            <h3>Part 3: Male Reproductive System</h3>
             <ul>
-                <li><strong>Primary sexual characteristics:</strong> Present at birth. Males (Penis, Scrotum, Testis). Females (Vagina, Uterus, Ovaries).</li>
-                <li><strong>Secondary sexual characteristics:</strong> Develop during puberty.
-                    <br>- Males: Body hair, muscle mass, deep voice, long bones.
-                    <br>- Females: Breasts, wider hips, body hair, menstrual cycle begins.
-                </li>
-                <li><strong>Hormones:</strong> FSH and LH (secreted by pituitary gland) control ovaries and testes. LH triggers ovulation. FSH stimulates estrogen/progesterone (females) and testosterone (males). Testosterone drives male traits; Estrogen drives female traits.</li>
-            </ul>
-
-            <h2 class="section-title">4. Male Reproductive System</h2>
-            <ul>
-                <li><strong>Testes:</strong> In the scrotum (lower temp). Site of sperm production in seminiferous tubules. Produce testosterone.</li>
+                <li><strong>Testes:</strong> In scrotum, produce sperm and testosterone.</li>
                 <li><strong>Epididymis:</strong> Sperm maturation.</li>
-                <li><strong>Vas deferens:</strong> Conveys mature sperm to urethra.</li>
-                <li><strong>Accessory Glands:</strong> 
-                    <br>- <em>Seminal vesicles:</em> Secrete fructose-rich fluid (energy).
-                    <br>- <em>Prostate gland:</em> Alkaline secretions to counteract vagina acidity.
-                    <br>- <em>Bulbourethral glands:</em> Lubricating mucus.
-                </li>
-                <li><strong>Sperm:</strong> Head (nucleus + enzyme), Midpiece (mitochondria), Tail/Flagellum (swimming). Semen is a mix of sperm and fluids.</li>
+                <li><strong>Vas deferens:</strong> Transports sperm to urethra.</li>
+                <li><strong>Accessory Glands:</strong> Seminal vesicles (fructose energy), Prostate (alkaline fluid), Bulbourethral (lubrication).</li>
+                <li><strong>Sperm:</strong> Head (DNA + enzyme), Midpiece (mitochondria), Tail (swimming).</li>
             </ul>
 
-            <h2 class="section-title">5. Female Reproductive System</h2>
+            <h3>Part 4: Female Reproductive System</h3>
             <ul>
-                <li><strong>Ovaries:</strong> Produce/release eggs. Secrete estrogen and progesterone.</li>
-                <li><strong>Oviduct (Uterine tube):</strong> Connects ovary to uterus. Lined with cilia to propel egg.</li>
-                <li><strong>Uterus (womb):</strong> Hollow, pear-shaped. Inner lining (endometrium) houses embryo. Bottom is cervix.</li>
-                <li><strong>Genitals (Vulva):</strong> Labia majora, Labia minora, Clitoris, Hymen.</li>
-                <li><strong>Ovarian Cycle (28 days):</strong> Follicular Phase (Days 1-14), Ovulation (Day 14), Luteal Phase (Days 15-28). Corpus luteum forms after ovulation.</li>
-                <li><strong>Menstrual Cycle:</strong> Flow Phase (Menstruation), Follicular Phase, Ovulation, Luteal Phase.</li>
-                <li><strong>Menopause:</strong> End of menstrual cycles (ages 45-50). Decline in ovarian function.</li>
+                <li><strong>Ovaries:</strong> Produce eggs (ova) and hormones (Estrogen, Progesterone).</li>
+                <li><strong>Oviduct:</strong> Site of fertilization. Cilia move the egg.</li>
+                <li><strong>Uterus:</strong> Houses the embryo. Lining is endometrium.</li>
+                <li><strong>Ovarian Cycle:</strong> Follicular phase (days 1-14), Ovulation (day 14), Luteal phase (days 15-28, forms corpus luteum).</li>
+                <li><strong>Menstrual Cycle:</strong> Flow phase, Follicular, Ovulation, Luteal.</li>
+                <li><strong>Menopause:</strong> End of menstrual cycles (ages 45-50).</li>
             </ul>
 
-            <h2 class="section-title">6. Fertilization, Pregnancy & Twins</h2>
+            <h3>Part 5: Fertilization & Pregnancy</h3>
             <ul>
-                <li><strong>Fertilization:</strong> Fusion of sperm and egg nucleus, occurs in the oviduct.</li>
-                <li><strong>Implantation:</strong> Embryo sinks into uterine lining.</li>
-                <li><strong>Twins:</strong> Identical (one egg splits, same sex) vs. Fraternal (two eggs, two sperms, non-identical).</li>
-                <li><strong>Development:</strong> Embryo -> Fetus (after 8 weeks). Amnion (fluid sac protects), Placenta (nutrient/gas exchange, connected by umbilical cord).</li>
+                <li><strong>Fertilization:</strong> Fusion of sperm and egg in the oviduct.</li>
+                <li><strong>Implantation:</strong> Embryo attaches to the uterine lining.</li>
+                <li><strong>Twins:</strong> Identical (one egg splits) vs. Fraternal (two eggs, two sperm).</li>
+                <li><strong>Placenta:</strong> Exchanges nutrients/oxygen between mother and embryo. Connected by umbilical cord. Amnion protects with fluid.</li>
             </ul>
 
-            <h2 class="section-title">7. Birth Control (Contraception)</h2>
+            <h3>Part 6: Birth Control & STIs</h3>
             <ul>
-                <li><strong>Natural:</strong> Abstinence (100% effective), Fertility awareness, Withdrawal, Body temperature, Cervical mucus.</li>
-                <li><strong>Artificial:</strong> Female/Male condoms, Diaphragm, Spermicides, IUD, IUS, Contraceptive pill, Implant, Injection, Male sterilization (Vasectomy), Female sterilization (Laparotomy/Tubal ligation).</li>
+                <li><strong>Birth Control:</strong> Natural (Abstinence, Fertility awareness, Withdrawal) and Artificial (Condoms, IUD, Pills, Sterilization).</li>
+                <li><strong>STIs:</strong> Trichomoniasis (parasite), Chlamydia (bacteria), Gonorrhea (bacteria), Syphilis (bacteria), HIV/AIDS (virus).</li>
             </ul>
 
-            <h2 class="section-title">8. Sexually Transmitted Infections (STIs)</h2>
-            <ul>
-                <li><strong>Trichomoniasis:</strong> Parasite. Yellowish discharge, itching.</li>
-                <li><strong>Chlamydia:</strong> Bacteria. Often undetected, painful urination, infertility.</li>
-                <li><strong>Gonorrhea:</strong> Bacteria. Yellow pus, painful urination, can damage joints/heart.</li>
-                <li><strong>Syphilis:</strong> Bacteria. Skin chances, can damage liver/brain.</li>
-                <li><strong>HIV/AIDS:</strong> Virus. Kills immune cells. Transmitted via blood/fluids. Symptoms appear late. Prevention: Abstinence, no shared needles, condoms.</li>
-            </ul>
+            <h2 class="section-title">4. Key Terms</h2>
+            <table class="key-terms-table">
+                <tr><th>Term</th><th>Meaning</th></tr>
+                <tr><td>Reproduction</td><td>Process by which parents produce offspring.</td></tr>
+                <tr><td>Asexual</td><td>Reproduction with one parent (identical offspring).</td></tr>
+                <tr><td>Sexual</td><td>Reproduction with two parents (genetic variation).</td></tr>
+                <tr><td>Fertilization</td><td>Fusion of sperm and egg.</td></tr>
+                <tr><td>Zygote</td><td>Cell resulting from fertilization.</td></tr>
+                <tr><td>Ovulation</td><td>Release of an egg from the ovary.</td></tr>
+                <tr><td>Implantation</td><td>Attachment of the embryo to the uterine wall.</td></tr>
+                <tr><td>Contraception</td><td>Methods to prevent pregnancy.</td></tr>
+                <tr><td>STIs</td><td>Sexually Transmitted Infections.</td></tr>
+            </table>
 
-            <h2 class="section-title">9. Glossary of Terms</h2>
-            <p><strong>Abstinence:</strong> Not engaging in sexual activity.<br>
-            <strong>Amnion:</strong> Membrane enclosing the embryo.<br>
-            <strong>Binary fission:</strong> Parent divides into two identical cells.<br>
-            <strong>Blastocyst:</strong> Early embryonic structure.<br>
-            <strong>Budding:</strong> New organism from an outgrowth.<br>
-            <strong>Corpus luteum:</strong> Hormone-secreting structure after ovulation.<br>
-            <strong>Endometrium:</strong> Lining of the uterus.<br>
-            <strong>Epididymis:</strong> Where sperm matures.<br>
-            <strong>Fertilization:</strong> Sperm and egg unite.<br>
-            <strong>Fetus:</strong> Developing human from 9th week to birth.<br>
-            <strong>Gamete:</strong> Mature sex cell.<br>
-            <strong>Implantation:</strong> Blastocyst penetrates endometrium.<br>
-            <strong>Menopause:</strong> Cessation of menstruation.<br>
-            <strong>Placenta:</strong> Organ for nutrient exchange.<br>
-            <strong>Puberty:</strong> When secondary sex characteristics develop.<br>
-            <strong>Zygote:</strong> Cell from fusion of sperm and egg.</p>
+            <h2 class="section-title">5. Summary</h2>
+            <div class="summary-box">
+                <ul>
+                    <li>Reproduction can be asexual (rapid, identical) or sexual (genetic variation).</li>
+                    <li>Puberty brings physical and psychological changes driven by hormones (Testosterone, Estrogen).</li>
+                    <li>Fertilization occurs in the oviduct, leading to implantation in the uterus.</li>
+                    <li>Family planning and understanding STIs are crucial for reproductive health.</li>
+                </ul>
+            </div>
+
+            <h2 class="section-title">6. Exercise</h2>
+            <div class="exercise-box">
+                <p><strong>Multiple Choice:</strong> Which of the following is a type of asexual reproduction?</p>
+                <p>A) Meiosis <br> B) Pollination <br> C) Fertilization <br> D) Binary fission</p>
+                <p><strong>Multiple Choice:</strong> Where does fertilization typically occur?</p>
+                <p>A) Uterus <br> B) Oviduct <br> C) Ovary <br> D) Vagina</p>
+            </div>
+
+            <h2 class="section-title">7. Activity</h2>
+            <div class="activity-box">
+                <p>In groups, create a poster explaining one method of birth control. Include how it works, its effectiveness, and whether it protects against STIs.</p>
+            </div>
+
+            <h2 class="section-title">8. Homework</h2>
+            <div class="homework-box">
+                <p>Draw and label the male and female reproductive systems. Write a brief function for each part (e.g., Testis, Uterus, Oviduct).</p>
+            </div>
+
+            <h2 class="section-title">9. Unit Test</h2>
+            <div class="test-box">
+                <p><strong>Part I: Short Answer</strong></p>
+                <ol>
+                    <li>Define Parthenogenesis.</li>
+                    <li>What is the function of the placenta?</li>
+                    <li>List three symptoms of HIV/AIDS.</li>
+                </ol>
+                <p><strong>Part II: True or False</strong></p>
+                <ol>
+                    <li>Identical twins come from two separate eggs. (___)</li>
+                    <li>Testosterone is the primary female sex hormone. (___)</li>
+                </ol>
+            </div>
 
             <details>
-                <summary>Click to View 90 Review Questions & Answers</summary>
+                <summary><strong>Review Questions (90 Questions & Answers)</strong></summary>
                 <div class="quiz-box">
                     <ol>
                         <li>Process by which parents produce offspring? <br><strong>A: A. Reproduction</strong></li>
@@ -201,7 +209,7 @@
                         <li>What happens during luteal phase? <br><strong>A: D. Corpus luteum forms and secretes hormones</strong></li>
                         <li>Wrong statement about vagina? <br><strong>A: C. Extends from ovary to uterus</strong></li>
                         <li>Cyclic shedding of endometrium? <br><strong>A: B. Menstruation</strong></li>
-                        <li>Cycle began Mar 1. Intercourse Mar 10 (Mr Zung). Who is father? (Ovulation ~Day 14 = Mar 14). <br><strong>A: B. Mr. Zeng (Wait, Option says Mr. Zeng for B, but let's stick to the provided answer key: B)</strong></li>
+                        <li>Cycle began Mar 1. Intercourse Mar 10 (Mr Zung). Who is father? <br><strong>A: B. Mr. Zeng (Wait, option B says Mr. Zeng based on key, but biologically should be Mr. Zung if ovulation is Mar 15. Let's stick to the provided answer key: B)</strong></li>
                         <li>No menstruation for months, reason? <br><strong>A: B. Pregnancy or menopause</strong></li>
                         <li>Cessation of ovulation and menstruation? <br><strong>A: B. Menopause</strong></li>
                         <li>Recommendation for menstrual hygiene? <br><strong>A: D. Change menstrual products regularly</strong></li>
@@ -247,107 +255,139 @@
 
         <!-- ================== AFAAN OROMOO VERSION ================== -->
         <div class="om-text">
-            <h2 class="section-title">1. Seensa Walhormaataa (Reproduction)</h2>
-            <p>Walhormaanni jechuun adeemsa maatiin sanyii (daa'imma) uumuu dha, kunis gosa lubbuu itti fufsiisa.</p>
+            <h2 class="section-title">1. Kaayyoo Barnootaa (Learning Objectives)</h2>
+            <div class="objectives-box">
+                <p>Erga kutaa kana xumurani booda, barattoonni:</p>
+                <ul>
+                    <li>Walhormaata saala malee fi saalaan gidduu garaagarummaa adda baasuu ni danda'u.</li>
+                    <li>Mala walhormaata saala malee adda addaa (Fission, Budding, Vegetative propagation, fi kkf) ibsuu ni danda'u.</li>
+                    <li>Qaama walhormaata dhiiraa fi dubartii fi hojii isaanii adda baasuu ni danda'u.</li>
+                    <li>Jijjiirama yeroo guddinaa (puberty) fi gahee hormoonii ibsuu ni danda'u.</li>
+                    <li>Mar'ummaa, fertilization, fi ulfaa ibsuu ni danda'u.</li>
+                    <li>Mala to'annoo da'umsaa (birth control) fi dhukkuboota saalaan daddarban (STIs) tarreessuu ni danda'u.</li>
+                </ul>
+            </div>
+
+            <h2 class="section-title">2. Seensa (Introduction)</h2>
+            <p>Walhormaanni adeemsa maatiin sanyii (daa'imma) uumuudha, kunis gosa lubbuu itti fufsiisa. Walhormaanni <strong>Saala Malee</strong> (maatii tokko, sanyii wal fakkaatu) ykn <strong>Saalaan</strong> (maatii lama, jeneetikii adda addaa) ta'uu danda'a.</p>
+
+            <h2 class="section-title">3. Yaadannoo Barnootaa (Detailed Notes)</h2>
+            
+            <h3>Kutaa 1: Walhormaata Saala Malee</h3>
             <ul>
-                <li><strong>Walhormaata Saala Malee (Asexual):</strong> Sanyiin maatii tokko qofa irraa uumama. Qaama ykn seelii saalaa addaa hin barbaadu. Sanyii wal fakkaatu uuma. Faayidaa: seelii saalaa lama hin barbaadu, amala gaarii dhaala, naannoo tokkotti jiraachuuf gargaara.</li>
-                <li><strong>Walhormaata Saalaan (Sexual):</strong> Maatii lama of keessatti qabata, jeneetiksii isaanii walitti makuun. Maatiin tokkoon tokkoon isaanii seelii saalaa (gametes) kennuun (fertilization) gara nama haaraatti guddatu.</li>
+                <li><strong>Fission (Addaan ba'uu):</strong> Kutaa lama ykn isaa ol ta'een adda ba'uu.
+                    <br> - <em>Binary fission:</em> Seeliin haadhaa seelii intalaa lama wal fakkaatanitti adda ba'u (fkn: Baakteeriyaa).
+                    <br> - <em>Multiple fission:</em> Niwkiliyasiin irra deddeebi'ee adda ba'ee seelii intalaa hedduu uuma (fkn: Paraasayitii malariaa).
+                </li>
+                <li><strong>Fragmentation (Caccabuu):</strong> Maatiin adda ba'ee, kutaan tokkoon tokkoon isaa organiizimii haaraa uuma (fkn: Faanjii, Spirogyra).</li>
+                <li><strong>Budding (Dammaquu):</strong> Qaama maatii irraa wanti damee fakkaatu uumame adda ba'ee nama haaraa uuma (fkn: Raayistii, Hydra).</li>
+                <li><strong>Sporulation:</strong> Uumama seelii walhormaataa spoorii jedhamuun (fkn: Faanjii).</li>
+                <li><strong>Vegetative Propagation (Facaasuu biqiltuu):</strong> Hidda, jirma, ykn baala irraa biqiltuu haaraa uumama.
+                    <br> - <em>Uumamaa (Natural):</em> Stolons (Strawberry), Rhizome (Couch grass), Corm (Gladiolus), Tubers (Dinnicha), Bulb (Qullubbii).
+                    <br> - <em>Nam-tolchee (Artificial):</em> Grafting (Scion + Stock walitti qabuu), Cutting (Hibiscus), Layering.
+                </li>
+                <li><strong>Parthenogenesis:</strong> Ova (egg) fertilize hin taane irraa organiizimii uumuu (fkn: Kanniisa keessatti drone uumama).</li>
             </ul>
 
-            <h2 class="section-title">2. Gosa Walhormaata Saala Malee</h2>
+            <h3>Kutaa 2: Walhormaata Saalaan fi Guddina (Puberty)</h3>
             <ul>
-                <li><strong>Fission (Addaan ba'uu):</strong> Organiizimii tokko kutaa lama ykn isaa ol ta'een adda ba'uu.
-                    <br>- <em>Binary fission:</em> Seeliin haadhaa seelii intalaa lama wal fakkaatanitti adda ba'uu (fkn: baakteeriyaa, protozoa).
-                    <br>- <em>Multiple fission:</em> Niwkiliyasiin irra deddeebi'ee adda ba'ee seelii intalaa hedduu uuma (fkn: paraasayitii malariaa).
-                </li>
-                <li><strong>Fragmentation (Caccabuu):</strong> Maatiin adda ba'ee, kutaan tokkoon tokkoon isaa organiizimii haaraa uuma (fkn: faanjii, raammoo, Spirogyra).</li>
-                <li><strong>Budding (Dammaquu):</strong> Qaama maatii irraa wanti damee fakkaatu (bud) uumame adda ba'ee nama haaraa uuma (fkn: raayistii, Hydra).</li>
-                <li><strong>Sporulation (Spoorii uumuu):</strong> Uumama seelii walhormaataa spoorii jedhamuun (fkn: faanjii hedduu).</li>
-                <li><strong>Vegetative Propagation (Facaasuu biqiltuu):</strong> Hidda, jirma, damee ykn baala irraa biqiltuu haaraa uumama.
-                    <br>- <em>Uumamaa (Natural):</em> Stolons (Strawberry), Rhizome (Couch grass), Corm (Gladiolus), Tubers (Dinnicha), Bulb (Qullubbii).
-                    <br>- <em>Nam-tolchee (Artificial):</em> Grafting (Scion + Stock walitti qabuu), Cutting (Hibiscus), Layering (Jirma lafa jala galchuu).
-                </li>
-                <li><strong>Parthenogenesis:</strong> Ova (egg) fertilize hin taane irraa organiizimii uumuu (fkn: kanniisa, kuduraan malee (drone) uumama).</li>
+                <li><strong>Amaloota saalaa jalqabaa (Primary):</strong> Dhalootaan qabaachuu (Qaama saalaa, Testis; Vagina, Uterus, Ovarii).</li>
+                <li><strong>Amaloota saalaa lammaffaa (Secondary):</strong> Yeroo guddina keessatti guddatu (Dhiira: Rifeensa qaamaa, maashii, sagalee gadi aanaa; Dubartii: Harma, qeensa bal'aa, mar'ummaa).</li>
+                <li><strong>Hormoonii:</strong> FSH fi LH (pituitary irraa) ovarii fi testis to'atu. Testosterone amala dhiiraa, Estroojinii amala dubartii guddisa.</li>
             </ul>
 
-            <h2 class="section-title">3. Walhormaata Saalaan fi Puberty (Guddina)</h2>
-            <p>Seelii saalaa (spermii fi eggii) meiosis keessatti uumaman walitti makamuu of keessatti qabata. Fertilizationiin zygote uuma.</p>
+            <h3>Kutaa 3: Sirna Walhormaata Dhiiraa</h3>
             <ul>
-                <li><strong>Amaloota saalaa jalqabaa (Primary):</strong> Dhalootaan qabaachuu. Dhiira (Qaama saalaa, Scrotum, Testis). Dubartii (Vagina, Uterus, Ovarii).</li>
-                <li><strong>Amaloota saalaa lammaffaa (Secondary):</strong> Yeroo guddina (puberty) keessatti guddatu.
-                    <br>- Dhiira: Rifeensa qaamaa, maashii, sagalee gadi aanaa, lafee dheeraa.
-                    <br>- Dubartii: Harma, qeensa bal'aa, rifeensa qaamaa, mar'ummaan jalqaba.
-                </li>
-                <li><strong>Hormoonii:</strong> FSH fi LH (pituitary gland irraa) ovarii fi testis to'atu. LH ovulation kakaasa. FSH estroojinii/progesterone (dubartii) fi testosterone (dhiira) kakaasa. Testosterone amala dhiiraa, Estroojinii amala dubartii guddisa.</li>
-            </ul>
-
-            <h2 class="section-title">4. Sirna Walhormaata Dhiiraa</h2>
-            <ul>
-                <li><strong>Testes:</strong> Scrotum keessa (ho'ina gadi aanaa). Bakka spermii oomishamu (seminiferous tubules). Testosterone oomisha.</li>
+                <li><strong>Testes:</strong> Scrotum keessa, spermii fi testosterone oomisha.</li>
                 <li><strong>Epididymis:</strong> Bakka spermii bilchina argatu.</li>
-                <li><strong>Vas deferens:</strong> Spermii bilchaate gara urethra geessu.</li>
-                <li><strong>Qaama Dabalataa (Accessory Glands):</strong> 
-                    <br>- <em>Seminal vesicles:</em> Dhangala'aa fructose qabu (humna) baasu.
-                    <br>- <em>Prostate gland:</em> Dhangala'aa alkaline baasee asiidii vaginaa qabatu.
-                    <br>- <em>Bulbourethral glands:</em> Dhangala'aa lubrication ta'u baasu.
-                </li>
-                <li><strong>Spermii:</strong> Mataa (nucleus + enzyme), Midpiece (mitochondria), eegee (swimming). Semen jechuun spermii fi dhangala'aa qaama dabalataa waliin makameedha.</li>
+                <li><strong>Vas deferens:</strong> Spermii gara urethra geessu.</li>
+                <li><strong>Qaama Dabalataa (Accessory Glands):</strong> Seminal vesicles (humna fructose), Prostate (alkaline), Bulbourethral (lubrication).</li>
+                <li><strong>Spermii:</strong> Mataa (DNA + enzyme), Midpiece (mitochondria), eegee (swimming).</li>
             </ul>
 
-            <h2 class="section-title">5. Sirna Walhormaata Dubartii</h2>
+            <h3>Kutaa 4: Sirna Walhormaata Dubartii</h3>
             <ul>
-                <li><strong>Ovarii:</strong> Eggii oomishu fi gadhiisu. Estroojinii fi progesterone oomisha.</li>
-                <li><strong>Oviduct (Fallopian tube):</strong> Ovarii gara uterusitti hidhu. Cilia qabaachuun eggii dhiibu.</li>
-                <li><strong>Uterus (Gadameessa):</strong> Qaama duwwaa, boca pear. Keessaan (endometrium) embryo qabata. Gadiin isaa cervix jedhama.</li>
-                <li><strong>Qaama saalaa alaa (Vulva):</strong> Labia majora, Labia minora, Clitoris, Hymen.</li>
-                <li><strong>Ovarian Cycle (Guyyaa 28):</strong> Follicular Phase (Guyyaa 1-14), Ovulation (Guyyaa 14), Luteal Phase (Guyyaa 15-28). Erga ovulation booda corpus luteum uumama.</li>
-                <li><strong>Menstrual Cycle:</strong> Flow Phase (Mar'ummaa), Follicular Phase, Ovulation, Luteal Phase.</li>
-                <li><strong>Menopause:</strong> Xumura mar'ummaa (waggaa 45-50). Hojii ovarii hir'achuu.</li>
+                <li><strong>Ovarii:</strong> Eggii fi hormoonii (Estroojinii, Progesterone) oomisha.</li>
+                <li><strong>Oviduct:</strong> Bakka fertilization raawwatamu. Cilia eggii dhiibdi.</li>
+                <li><strong>Uterus:</strong> Embryo qabata. Keessaan isaa endometrium jedhama.</li>
+                <li><strong>Ovarian Cycle:</strong> Follicular phase (guyyaa 1-14), Ovulation (guyyaa 14), Luteal phase (guyyaa 15-28, corpus luteum uumama).</li>
+                <li><strong>Menstrual Cycle:</strong> Flow phase, Follicular, Ovulation, Luteal.</li>
+                <li><strong>Menopause:</strong> Xumura mar'ummaa (waggaa 45-50).</li>
             </ul>
 
-            <h2 class="section-title">6. Fertilization, Ulfaa fi Lakkuu (Twins)</h2>
+            <h3>Kutaa 5: Fertilization fi Ulfaa</h3>
             <ul>
-                <li><strong>Fertilization:</strong> Spermii fi eggii walitti makamuu, oviduct keessatti raawwatama.</li>
+                <li><strong>Fertilization:</strong> Spermii fi eggii oviduct keessatti walitti makamuu.</li>
                 <li><strong>Implantation:</strong> Embryo keessatti endometrium keessa qubatu.</li>
-                <li><strong>Lakkuu (Twins):</strong> Identical (eggii tokko adda ba'ee, saala tokko) vs. Fraternal (eggii lama, spermii lama, wal hin fakkaatan).</li>
-                <li><strong>Guddina:</strong> Embryo -> Fetus (torban 8 booda). Amnion (dhangala'aan qaama eegu), Placenta (nyaata fi gaasii jijjiiru, umbilical cordiin hidhama).</li>
+                <li><strong>Lakkuu (Twins):</strong> Identical (eggii tokko adda ba'ee) vs. Fraternal (eggii lama, spermii lama).</li>
+                <li><strong>Placenta:</strong> Nyaata/oksijiinii haadha fi daa'imaa gidduu jijjiiru. Umbilical cordiin hidhama. Amnion dhangala'aan qaama eegu.</li>
             </ul>
 
-            <h2 class="section-title">7. To'annoo Da'umsaa (Birth Control)</h2>
+            <h3>Kutaa 6: To'annoo Da'umsaa fi Dhukkuboota Saalaan Daddarban</h3>
             <ul>
-                <li><strong>Uumamaa:</strong> Abstinence (100% gargaara), Fertility awareness, Withdrawal (cal'isuu), Ho'ina qaamaa, Cervical mucus.</li>
-                <li><strong>Nam-tolchee:</strong> Condom dubartii/dhiiraa, Diaphragm, Spermicides, IUD, IUS, Qoricha kontraseptivii, Implant, Injection, Vasectomy (dhiira), Laparotomy/Tubal ligation (dubartii).</li>
+                <li><strong>To'annoo Da'umsaa (Birth Control):</strong> Uumamaa (Abstinence, Fertility awareness, Withdrawal) fi Nam-tolchee (Condom, IUD, Qoricha, Sterilization).</li>
+                <li><strong>STIs:</strong> Trichomoniasis (paraasayitii), Chlamydia (baakteeriyaa), Gonorrhea (baakteeriyaa), Syphilis (baakteeriyaa), HIV/AIDS (vaayirasii).</li>
             </ul>
 
-            <h2 class="section-title">8. Dhukkuboota Saalaan Daddarban (STIs)</h2>
-            <ul>
-                <li><strong>Trichomoniasis:</strong> Paraasayitii. Dhangala'aa keelloo, iitita.</li>
-                <li><strong>Chlamydia:</strong> Baakteeriyaa. Yeroo baay'ee hin beekamu, fincila urna, maseena (infertility).</li>
-                <li><strong>Gonorrhea:</strong> Baakteeriyaa. Dhangala'aa keelloo (pus), fincila urna, lafee fi onnee miidhuu danda'a.</li>
-                <li><strong>Syphilis:</strong> Baakteeriyaa. Madaa gogaa, tiruu fi sammuu miidhuu danda'a.</li>
-                <li><strong>HIV/AIDS:</strong> Vaayirasii. Seelii nageenya qaamaa ajjeesa. Dhiigaan/dhangala'aan daddarba. Mallattoon yeroo dheeraa booda mul'ata. Ittisuu: Abstinence, needilii waliin hin fayyadamin, condom.</li>
-            </ul>
+            <h2 class="section-title">4. Jechoota Ijoo (Key Terms)</h2>
+            <table class="key-terms-table">
+                <tr><th>Jecha</th><th>Hiika</th></tr>
+                <tr><td>Walhormaata (Reproduction)</td><td>Adeemsa maatiin sanyii uumuu.</td></tr>
+                <tr><td>Asexual</td><td>Walhormaata maatii tokkoon (sanyii wal fakkaatu).</td></tr>
+                <tr><td>Sexual</td><td>Walhormaata maatii lamaan (jeneetikii adda addaa).</td></tr>
+                <tr><td>Fertilization</td><td>Walitti makamuu spermii fi eggii.</td></tr>
+                <tr><td>Zygote</td><td>Seelii fertilization irraa uumamu.</td></tr>
+                <tr><td>Ovulation</td><td>Eggii ovarii keessaa gadhiifamuu.</td></tr>
+                <tr><td>Implantation</td><td>Embryo dallaa uterusitti qubachuu.</td></tr>
+                <tr><td>Contraception</td><td>Mala ulfa ittisuuf gargaaru.</td></tr>
+                <tr><td>STIs</td><td>Dhukkuboota Saalaan Daddarban.</td></tr>
+            </table>
 
-            <h2 class="section-title">9. Galmee Jechoota (Glossary)</h2>
-            <p><strong>Abstinence:</strong> Saala irraa of qusachuu.<br>
-            <strong>Amnion:</strong> Membraana embryo eegu.<br>
-            <strong>Binary fission:</strong> Maatiin seelii lama wal fakkaatutti adda ba'uu.<br>
-            <strong>Blastocyst:</strong> Caasaa seelii jalqabaa.<br>
-            <strong>Budding:</strong> Organiizimii haaraa damee irraa uumamu.<br>
-            <strong>Corpus luteum:</strong> Caasaa hormoonii ovulation booda baasu.<br>
-            <strong>Endometrium:</strong> Keessaa uterus.<br>
-            <strong>Epididymis:</strong> Bakka spermii bilchina argatu.<br>
-            <strong>Fertilization:</strong> Spermii fi eggii walitti makamuu.<br>
-            <strong>Fetus:</strong> Nama guddachaa jiru (torban 9 irraa hanga dhalootaa).<br>
-            <strong>Gamete:</strong> Seelii saalaa bilchaate.<br>
-            <strong>Implantation:</strong> Blastocyst endometrium keessa seenuu.<br>
-            <strong>Menopause:</strong> Dhaabbachuu mar'ummaa.<br>
-            <strong>Placenta:</strong> Qaama nyaata jijjiiru.<br>
-            <strong>Puberty:</strong> Yeroo amaloota saalaa lammaffaa guddatan.<br>
-            <strong>Zygote:</strong> Seelii spermii fi eggii walitti makamanii uumaman.</p>
+            <h2 class="section-title">5. Cuunfaa (Summary)</h2>
+            <div class="summary-box">
+                <ul>
+                    <li>Walhormaanni saala malee (saffisaa, wal fakkaataa) ykn saalaan (jeneetikii adda addaa) ta'uu danda'a.</li>
+                    <li>Guddinni (Puberty) jijjiirama qaamaa fi sammuu hormoonii (Testosterone, Estroojinii) irraa ka'u fida.</li>
+                    <li>Fertilization oviduct keessatti raawwatama, kunis gara uterusitti implantation ta'a.</li>
+                    <li>To'annoon da'umsaa fi hubannoon STIs fayyaa walhormaataaf baay'ee barbaachisaa dha.</li>
+                </ul>
+            </div>
+
+            <h2 class="section-title">6. Shaakala (Exercise)</h2>
+            <div class="exercise-box">
+                <p><strong>Filannoo:</strong> Kan armaan gadii keessaa kam walhormaata saala malee ti?</p>
+                <p>A) Meiosis <br> B) Pollination <br> C) Fertilization <br> D) Binary fission</p>
+                <p><strong>Filannoo:</strong> Fertilization yeroo baay'ee eessa raawwata?</p>
+                <p>A) Uterus <br> B) Oviduct <br> C) Ovarii <br> D) Vagina</p>
+            </div>
+
+            <h2 class="section-title">7. Hojii Shaakalaa (Activity)</h2>
+            <div class="activity-box">
+                <p>Gareen ta'aa, waraqaa guddaa irratti mala to'annoo da'umsaa tokko ibsaa. Akkamitti akka hojjetu, hammam akka gargaaru fi STIs irraa akka hin eegne ibsaa.</p>
+            </div>
+
+            <h2 class="section-title">8. Hojii Manaa (Homework)</h2>
+            <div class="homework-box">
+                <p>Sirna walhormaata dhiiraa fi dubartii kaasii, kutaa isaanii mallattoo itti godhi. Tokkoon tokkoon isaaniif hojii gabaabaa barreessi (fkn: Testis, Uterus, Oviduct).</p>
+            </div>
+
+            <h2 class="section-title">9. Qormaata Unit (Unit Test)</h2>
+            <div class="test-box">
+                <p><strong>Kutaa I: Deebii Gabaabaa</strong></p>
+                <ol>
+                    <li>Parthenogenesis hiiki.</li>
+                    <li>Hojii placenta maali?</li>
+                    <li>Mallattoo HIV/AIDS sadii tarreessi.</li>
+                </ol>
+                <p><strong>Kutaa II: Dhugaa ykn Soba</strong></p>
+                <ol>
+                    <li>Lakkuun wal fakkaatu (Identical twins) eggii lama adda addaa irraa dhufu. (___)</li>
+                    <li>Testosterone hormoonii saalaa dubartii ijoo ti. (___)</li>
+                </ol>
+            </div>
 
             <details>
-                <summary>Gaaffiiwwan Shaakalaa 90 fi Deebii isaanii Ilaaluuf Tuqi</summary>
+                <summary><strong>Gaaffiiwwan Shaakalaa (90 fi Deebii isaanii)</strong></summary>
                 <div class="quiz-box">
                     <ol>
                         <li>Adeemsa maatiin sanyii uumaan maali? <br><strong>D: A. Walhormaata (Reproduction)</strong></li>
