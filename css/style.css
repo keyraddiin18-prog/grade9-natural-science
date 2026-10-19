@@ -1,36 +1,143 @@
+:root {
+    /* Light Mode Colors */
+    --bg-color: #f4f7f6;
+    --text-color: #2c3e50;
+    --header-bg: #1a252f; /* Navy Blue */
+    --header-text: #ffffff;
+    --card-bg: #ffffff;
+    --card-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    --primary-color: #3498db; /* Blue */
+    --secondary-color: #1abc9c; /* Teal */
+    --search-bg: #ffffff;
+}
+
+[data-theme="dark"] {
+    /* Dark Mode Colors */
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --header-bg: #000000;
+    --header-text: #ffffff;
+    --card-bg: #1e1e1e;
+    --card-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    --primary-color: #2980b9;
+    --secondary-color: #16a085;
+    --search-bg: #2c2c2c;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 body {
-    background-color: #f4f7f6;
-    color: #333;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     line-height: 1.6;
+    padding-bottom: 60px;
 }
 
+/* Header Styles */
 header {
-    background-color: #2c3e50;
-    color: white;
+    background-color: var(--header-bg);
+    color: var(--header-text);
     padding: 20px;
-    text-align: center;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-header h1 {
-    font-size: 1.5rem;
-    margin-bottom: 5px;
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
 }
 
-header p {
-    font-size: 0.9rem;
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo i {
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+
+.logo h1 {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.logo p {
+    font-size: 0.8rem;
     color: #bdc3c7;
 }
 
+.theme-btn {
+    background: none;
+    border: none;
+    color: var(--header-text);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Progress Bar */
+.progress-container {
+    margin-bottom: 15px;
+}
+
+.progress-text {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+    color: #bdc3c7;
+}
+
+.progress-bar-bg {
+    background-color: #34495e;
+    height: 8px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    background-color: var(--secondary-color);
+    height: 100%;
+    width: 0%;
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+}
+
+/* Search Bar */
+.search-container {
+    background-color: var(--search-bg);
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.search-container i {
+    color: #7f8c8d;
+    margin-right: 10px;
+}
+
+.search-container input {
+    border: none;
+    outline: none;
+    width: 100%;
+    background: transparent;
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+/* Unit Cards */
 .unit-list {
     padding: 20px;
     display: flex;
@@ -41,22 +148,21 @@ header p {
 .unit-card {
     display: flex;
     align-items: center;
-    background: white;
+    background: var(--card-bg);
     padding: 15px;
-    border-radius: 12px;
+    border-radius: 15px;
     text-decoration: none;
-    color: #333;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    color: var(--text-color);
+    box-shadow: var(--card-shadow);
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .unit-card:active {
     transform: scale(0.98);
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
 .unit-number {
-    background-color: #3498db;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: white;
     font-size: 1.5rem;
     font-weight: bold;
@@ -65,13 +171,17 @@ header p {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 12px;
     margin-right: 15px;
+}
+
+.unit-info {
+    flex: 1;
 }
 
 .unit-info h2 {
     font-size: 1.1rem;
-    color: #2c3e50;
+    margin-bottom: 3px;
 }
 
 .unit-info p {
@@ -79,69 +189,25 @@ header p {
     color: #7f8c8d;
 }
 
+.arrow-icon {
+    color: #bdc3c7;
+}
+
 footer {
     text-align: center;
     padding: 20px;
     font-size: 0.8rem;
-    color: #95a5a6;
-    margin-bottom: 20px;
+    color: #7f8c8d;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--bg-color);
 }
 
-
-/* Bifa Button Afaan Jijjiiruu */
-.lang-btn {
-    background-color: #e67e22;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-}
-
-.lang-btn:active {
-    background-color: #d35400;
-}
-
-/* Bifa Qabiyyee Unitii */
-.unit-content {
-    padding: 20px;
-    background: white;
-    margin: 15px;
-    border-radius: 12px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-
-.section-title {
-    color: #2980b9;
-    border-bottom: 2px solid #ecf0f1;
-    padding-bottom: 5px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-.pdf-btn {
-    display: block;
-    text-align: center;
-    background-color: #27ae60;
-    color: white;
-    padding: 12px;
-    text-decoration: none;
-    border-radius: 8px;
-    margin: 20px;
-    font-weight: bold;
-}
-
-.back-btn {
-    display: inline-block;
-    margin: 15px;
-    color: #3498db;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* Afaan Oromoo jalqaba irratti dhokata */
+/* Koodii duraanii Unit keessatti argamu (akkuma jirutti hafa) */
+.lang-btn { background-color: #e67e22; color: white; border: none; padding: 10px 20px; border-radius: 8px; font-size: 1rem; font-weight: bold; cursor: pointer; margin-top: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.2); }
+.unit-content { padding: 20px; background: var(--card-bg); margin: 15px; border-radius: 12px; box-shadow: var(--card-shadow); color: var(--text-color); }
+.section-title { color: var(--primary-color); border-bottom: 2px solid var(--bg-color); padding-bottom: 5px; margin-top: 20px; margin-bottom: 10px; }
+.pdf-btn { display: block; text-align: center; background-color: #27ae60; color: white; padding: 12px; text-decoration: none; border-radius: 8px; margin: 20px; font-weight: bold; }
+.back-btn { display: inline-block; margin: 15px; color: var(--primary-color); text-decoration: none; font-weight: bold; }
 .om-text { display: none; }

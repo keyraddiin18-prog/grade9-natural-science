@@ -3,74 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grade 9 Natural Science</title>
+    <title>Grade 9 Natural Science - KEYRADDIIN MEDIA</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="manifest" href="manifest.json">
+    <!-- Font Awesome icons (Search fi Dark mode icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Kutaa 9ffaa Natural Science</h1>
-        <p>Barruulee Barnootaa (Biology)</p>
+        <div class="header-top">
+            <div class="logo">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <div>
+                    <h1>KEYRADDIIN MEDIA</h1>
+                    <p>Grade 9 Natural Science</p>
+                </div>
+            </div>
+            <button id="themeToggle" class="theme-btn" onclick="toggleTheme()">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <div class="progress-text">
+                <span>Progress:</span>
+                <span id="progressPercent">0%</span>
+            </div>
+            <div class="progress-bar-bg">
+                <div class="progress-bar-fill" id="progressBar" style="width: 0%;"></div>
+            </div>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <i class="fa-solid fa-search"></i>
+            <input type="text" id="searchInput" placeholder="Unit barbaadi (fkn: Unit 1, Cell)..." onkeyup="searchUnits()">
+        </div>
     </header>
 
-    <main class="unit-list">
+    <main class="unit-list" id="unitList">
         <!-- Unit 1 -->
-        <a href="units/biology-unit-1.html" class="unit-card">
+        <a href="units/biology-unit-1.html" class="unit-card" data-title="Introduction to Biology">
             <span class="unit-number">1</span>
             <div class="unit-info">
                 <h2>Biology Unit 1</h2>
                 <p>Introduction to Biology</p>
             </div>
+            <i class="fa-solid fa-chevron-right arrow-icon"></i>
         </a>
 
         <!-- Unit 2 -->
-        <a href="units/biology-unit-2.html" class="unit-card">
+        <a href="units/biology-unit-2.html" class="unit-card" data-title="Characteristics and Classification">
             <span class="unit-number">2</span>
             <div class="unit-info">
                 <h2>Biology Unit 2</h2>
-                <p>Cell Biology</p>
+                <p>Characteristics & Classification</p>
             </div>
+            <i class="fa-solid fa-chevron-right arrow-icon"></i>
         </a>
 
         <!-- Unit 3 -->
-        <a href="units/biology-unit-3.html" class="unit-card">
+        <a href="units/biology-unit-3.html" class="unit-card" data-title="Cells">
             <span class="unit-number">3</span>
             <div class="unit-info">
                 <h2>Biology Unit 3</h2>
-                <p>Biochemical Molecules</p>
+                <p>Cells</p>
             </div>
+            <i class="fa-solid fa-chevron-right arrow-icon"></i>
         </a>
 
         <!-- Unit 4 -->
-        <a href="units/biology-unit-4.html" class="unit-card">
+        <a href="units/biology-unit-4.html" class="unit-card" data-title="Reproduction">
             <span class="unit-number">4</span>
             <div class="unit-info">
                 <h2>Biology Unit 4</h2>
-                <p>Cell Division</p>
+                <p>Reproduction</p>
             </div>
+            <i class="fa-solid fa-chevron-right arrow-icon"></i>
         </a>
 
         <!-- Unit 5 -->
-        <a href="units/biology-unit-5.html" class="unit-card">
+        <a href="units/biology-unit-5.html" class="unit-card" data-title="Human Health and Nutrition">
             <span class="unit-number">5</span>
             <div class="unit-info">
                 <h2>Biology Unit 5</h2>
-                <p>Microorganisms</p>
+                <p>Human Health, Nutrition & Disease</p>
             </div>
+            <i class="fa-solid fa-chevron-right arrow-icon"></i>
         </a>
 
         <!-- Unit 6 -->
-        <a href="units/biology-unit-6.html" class="unit-card">
+        <a href="units/biology-unit-6.html" class="unit-card" data-title="Ecology">
             <span class="unit-number">6</span>
             <div class="unit-info">
                 <h2>Biology Unit 6</h2>
-                <p>Plants and Environment</p>
+                <p>Ecology</p>
             </div>
+            <i class="fa-solid fa-chevron-right arrow-icon"></i>
         </a>
     </main>
 
     <footer>
-        <p>&copy; 2026 Grade 9 Natural Science. Offline Ready.</p>
+        <p>&copy; 2026 KEYRADDIIN MEDIA. Offline Ready.</p>
     </footer>
 
     <script src="js/app.js"></script>
