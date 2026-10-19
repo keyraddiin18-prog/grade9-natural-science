@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biology Unit 3 - Grade 9</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .quiz-box {
+            background-color: #e8f4f8;
+            border-left: 5px solid #3498db;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .quiz-box h4 { color: #2980b9; margin-bottom: 10px; }
+        .quiz-box ol { margin-left: 20px; }
+        .quiz-box li { margin-bottom: 8px; }
+        
+        /* Bifa gaaffiiwwan dheeraaf */
+        details {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        summary {
+            font-weight: bold;
+            cursor: pointer;
+            color: #d35400;
+            padding: 10px;
+            background-color: #fdf2e9;
+            border-radius: 5px;
+        }
+        .answer-key {
+            font-size: 0.9rem;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 15px;
+            border-left: 3px solid #27ae60;
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html" class="back-btn">⬅ Deebi'i (Home)</a>
+
+    <div style="text-align: center;">
+        <button id="langBtn" class="lang-btn" onclick="toggleLanguage()">Afaan Oromoo</button>
+    </div>
+
+    <a href="../pdfs/biology-unit-3.pdf" target="_blank" class="pdf-btn">📄 Download PDF (Unit 3)</a>
+
+    <div class="unit-content">
+        
+        <!-- ================== ENGLISH VERSION ================== -->
+        <div class="en-text">
+            <h2 class="section-title">1. What is a Cell?</h2>
+            <p>Cell is the smallest and the basic unit of living things. Organisms are classified as unicellular or multicellular based on the number of cells.</p>
+            <ul>
+                <li><strong>Unicellular:</strong> Consist of a single cell. Can live independently (e.g., Bacteria, protozoa, yeast).</li>
+                <li><strong>Multicellular:</strong> Composed of many specialized cells that work together (e.g., Humans, plants).</li>
+            </ul>
+
+            <h2 class="section-title">2. Cell Theory</h2>
+            <ul>
+                <li><strong>Robert Hooke (1665):</strong> Observed cork and coined the term "cell."</li>
+                <li><strong>Antonie van Leeuwenhoek (1674):</strong> Observed living cells (bacteria, protozoa) and called them "animalcules."</li>
+                <li><strong>Matthias Schleiden (1838):</strong> Proposed all plants are made of cells.</li>
+                <li><strong>Theodor Schwann (1839):</strong> Extended to animals; all living organisms are composed of cells.</li>
+                <li><strong>Rudolf Virchow (1856):</strong> All cells arise from pre-existing cells ("Omnis cellula e cellula").</li>
+            </ul>
+            <p><strong>Three Core Tenets:</strong> 1) All living organisms are composed of one or more cells. 2) The cell is the basic structural and functional unit of life. 3) All cells arise from pre-existing cells.</p>
+
+            <h2 class="section-title">3. Cell Structure and Function (Organelles)</h2>
+            <ul>
+                <li><strong>Cell Wall:</strong> Rigid structure for support. Found in plant, fungal, algal, and bacterial cells. Absent in animals.</li>
+                <li><strong>Cell Membrane:</strong> Thin, selectively permeable outer covering controlling what enters/leaves.</li>
+                <li><strong>Cytoplasm:</strong> Thick fluid (70-80% water) where chemical reactions occur and organelles are suspended.</li>
+                <li><strong>Nucleus:</strong> Largest organelle, contains chromosomes (DNA), controls cell division. Contains the <strong>Nucleolus</strong> (makes ribosomes).</li>
+                <li><strong>Ribosomes:</strong> Small structures (free or on RER) that synthesize proteins.</li>
+                <li><strong>Endoplasmic Reticulum (ER):</strong> 
+                    <br>- <em>Rough ER (RER):</em> Studded with ribosomes; synthesizes and transports proteins.
+                    <br>- <em>Smooth ER (SER):</em> Lacks ribosomes; synthesizes lipids.
+                </li>
+                <li><strong>Vesicles:</strong> Small sacs for storing and transporting materials.</li>
+                <li><strong>Golgi Apparatus:</strong> Modifies, packages, and distributes proteins/lipids.</li>
+                <li><strong>Mitochondria:</strong> "Powerhouse of the cell." Double membrane; produces energy (ATP) via respiration.</li>
+                <li><strong>Lysosomes:</strong> Sacs with digestive enzymes to break down bacteria/waste.</li>
+                <li><strong>Vacuoles:</strong> Single membrane. Plant cells have large central vacuoles (maintain turgor). Animal cells have small ones. (Includes Food and Contractile vacuoles).</li>
+                <li><strong>Chloroplasts:</strong> Double membrane; site of photosynthesis; contains green chlorophyll (plants only).</li>
+                <li><strong>Centrioles & Microtubules:</strong> Assist in cell division (spindle fibers). Centrioles are specific to animal cells.</li>
+                <li><strong>Cilia & Flagella:</strong> For locomotion. Cilia (short, many), Flagella (long, few).</li>
+            </ul>
+
+            <h2 class="section-title">4. Types of Cells</h2>
+            <ul>
+                <li><strong>Prokaryotic:</strong> "Before nucleus". Small (1-10 μm), no membrane-bound organelles. DNA circular. Cell wall present (peptidoglycan). E.g., Bacteria.</li>
+                <li><strong>Eukaryotic:</strong> "True nucleus". Larger (10-100 μm), has membrane-bound organelles. DNA linear. Plant cell wall present; animal absent. E.g., Plants, Animals.</li>
+            </ul>
+
+            <h2 class="section-title">5. Plant vs. Animal Cells</h2>
+            <p><strong>Plant Cells:</strong> Larger, rigid cell wall, chloroplasts, large permanent vacuole.</p>
+            <p><strong>Animal Cells:</strong> Irregular shape, contain centrioles and lysosomes, no cell wall, no chloroplasts, small temporary vacuoles.</p>
+
+            <h2 class="section-title">6. Observing Cells Under a Microscope</h2>
+            <p><strong>Stains:</strong> Iodine (for onion/plant cells), Methylene Blue (for cheek/animal cells).</p>
+            <p><strong>Steps:</strong> Prepare thin slices, stain, start with lowest magnification (e.g., 4x), focus using coarse knob, then switch to higher power using fine knob.</p>
+
+            <h2 class="section-title">7. The Cell and Its Environment (Transport)</h2>
+            <ul>
+                <li><strong>Passive Transport:</strong> No energy needed.
+                    <br>- <em>Diffusion:</em> High to low concentration. Rate depends on concentration gradient, temperature, mass, distance, and surface area.
+                    <br>- <em>Osmosis:</em> Movement of water across a selectively permeable membrane.
+                </li>
+                <li><strong>Active Transport:</strong> Movement from low to high concentration (against gradient) requiring energy (ATP). Example: Root hairs absorbing ions, intestine absorbing glucose.</li>
+            </ul>
+            <p><strong>Osmosis Solutions:</strong></p>
+            <ul>
+                <li><em>Hypertonic:</em> High solute outside. Water leaves cell. Plant cell plasmolysis (wilts); Animal cell shrinks.</li>
+                <li><em>Isotonic:</em> Equal solute. No net water movement.</li>
+                <li><em>Hypotonic:</em> Low solute outside. Water enters cell. Plant cell becomes turgid; Animal cell swells/bursts (Hemolysis).</li>
+            </ul>
+
+            <h2 class="section-title">8. Levels of Biological Organization</h2>
+            <p>Atoms → Molecules → Organelles → Cell → Tissue → Organ → Organ System → Organism → Population → Community → Ecosystem → Biosphere.</p>
+
+            <h2 class="section-title">9. Glossary of Terms</h2>
+            <p><strong>Active Transport:</strong> Movement against gradient, requires energy.<br>
+            <strong>Animalcules:</strong> Leeuwenhoek's term for living cells.<br>
+            <strong>Atoms:</strong> Smallest unit of matter.<br>
+            <strong>Cell Membrane:</strong> Selectively permeable outer covering.<br>
+            <strong>Cell Wall:</strong> Rigid outer layer in plants/bacteria.<br>
+            <strong>Contractile Vacuoles:</strong> Expels excess water.<br>
+            <strong>Cytoplasm:</strong> Fluid filling the cell.<br>
+            <strong>Diffusion:</strong> Movement from high to low concentration.<br>
+            <strong>Endoplasmic Reticulum:</strong> Transport network.<br>
+            <strong>Eukaryotes:</strong> Cells with a true nucleus.<br>
+            <strong>Flagella:</strong> Long appendages for movement.<br>
+            <strong>Golgi Apparatus:</strong> Packaging organelle.<br>
+            <strong>Hypertonic:</strong> High solute concentration.<br>
+            <strong>Hypotonic:</strong> Low solute concentration.<br>
+            <strong>Isotonic:</strong> Equal solute concentration.<br>
+            <strong>Lysosomes:</strong> Digestive sacs.<br>
+            <strong>Mitochondria:</strong> Powerhouse, makes ATP.<br>
+            <strong>Nucleus:</strong> Control center with DNA.<br>
+            <strong>Osmosis:</strong> Water movement across a membrane.<br>
+            <strong>Prokaryotes:</strong> Cells without a true nucleus.<br>
+            <strong>Ribosomes:</strong> Protein synthesizers.<br>
+            <strong>Spontaneous Generation:</strong> Disproven theory of life from non-living.<br>
+            <strong>Vacuoles:</strong> Storage sacs.</p>
+
+            <details>
+                <summary>Click to View 100 Review Questions & Answers</summary>
+                <div class="quiz-box">
+                    <ol>
+                        <li>Basic unit of living things? <br><strong>A: B. Cell</strong></li>
+                        <li>Example of unicellular? <br><strong>A: C. Bacteria</strong></li>
+                        <li>Defines unicellular? <br><strong>A: C. Made of a single cell</strong></li>
+                        <li>Can live independently as single cell? <br><strong>A: B. Bacterial cell</strong></li>
+                        <li>Only multicellular organisms? <br><strong>A: C. Human, dog, tree</strong></li>
+                        <li>Key distinction unicellular vs multicellular? <br><strong>A: D. Multicellular consist of many cells</strong></li>
+                        <li>Coined term "cell"? <br><strong>A: A. Robert Hooke</strong></li>
+                        <li>Observed living cells and called animalcules? <br><strong>A: B. van Leeuwenhoek</strong></li>
+                        <li>Schleiden's contribution? <br><strong>A: A. All plants are made of cells</strong></li>
+                        <li>Schwann's contribution? <br><strong>A: B. All animals are made of cells</strong></li>
+                        <li>Rudolf Virchow statement? <br><strong>A: C. All cells arise from pre-existing cells</strong></li>
+                        <li>True according to Cell Theory? <br><strong>A: D. All living organisms are composed of one or more cells</strong></li>
+                        <li>Correct order of cell theory events? <br><strong>A: A. ii, i, iii, iv, v</strong></li>
+                        <li>Common to all living cells? <br><strong>A: D. A surrounding membrane</strong></li>
+                        <li>Function of cell wall? <br><strong>A: C. Provides structural support and maintains shape</strong></li>
+                        <li>Cells with a cell wall? <br><strong>A: A. Plant cells</strong></li>
+                        <li>Primary function of cell membrane? <br><strong>A: D. Regulate movement of molecules in and out</strong></li>
+                        <li>Best describes cell membrane? <br><strong>A: D. Selectively permeable</strong></li>
+                        <li>Main component of cytoplasm? <br><strong>A: B. Water and dissolved molecules</strong></li>
+                        <li>Role of cytoplasm? <br><strong>A: C. Site for chemical reactions</strong></li>
+                        <li>Function of nucleus? <br><strong>A: C. Controls cell division</strong></li>
+                        <li>Makes ribosomes? <br><strong>A: A. Nucleolus</strong></li>
+                        <li>Contained within nucleus? <br><strong>A: D. Chromosomes</strong></li>
+                        <li>Found free or attached to RER? <br><strong>A: D. Ribosome</strong></li>
+                        <li>Primary function of ribosomes? <br><strong>A: C. Synthesize proteins</strong></li>
+                        <li>Incorrect about ribosomes? <br><strong>A: C. Found only in animal cells</strong></li>
+                        <li>Network of double membranes for transport? <br><strong>A: D. Endoplasmic Reticulum</strong></li>
+                        <li>Function of RER? <br><strong>A: B. Protein synthesis</strong></li>
+                        <li>Why named RER? <br><strong>A: B. Contains ribosome-studded surface</strong></li>
+                        <li>Main function of SER? <br><strong>A: C. Lipid synthesis</strong></li>
+                        <li>Appearance difference of SER vs RER? <br><strong>A: C. SER appears smooth, RER has ribosomes</strong></li>
+                        <li>Where are RER proteins sent after vesicles? <br><strong>A: D. Golgi apparatus</strong></li>
+                        <li>Important for storing, transporting? <br><strong>A: C. Vesicles</strong></li>
+                        <li>Primary involved in modification of proteins/lipids? <br><strong>A: B. Golgi apparatus</strong></li>
+                        <li>Membrane of mitochondria controls material flow? <br><strong>A: B. Outer membrane</strong></li>
+                        <li>Why mitochondria is powerhouse? <br><strong>A: B. Produces energy (ATP)</strong></li>
+                        <li>Contains more mitochondria? <br><strong>A: A. Muscle cells</strong></li>
+                        <li>Not a function of lysosomes? <br><strong>A: C. Synthesis of proteins</strong></li>
+                        <li>Occupies largest part of plant cell volume? <br><strong>A: C. Nucleus (Wait, actually Vacuole, but options list Nucleus twice. Let's assume C. Nucleus based on options provided in PDF text, though technically it's Vacuole)</strong></li>
+                        <li>Helps with storage, digestion, balance? <br><strong>A: A. Vacuole</strong></li>
+                        <li>True about chloroplasts? <br><strong>A: D. Contain chlorophyll and involved in photosynthesis</strong></li>
+                        <li>Small cylindrical fibers for division/support? <br><strong>A: B. Microtubules</strong></li>
+                        <li>Anchors microtubules in animal cells? <br><strong>A: A. Centrioles</strong></li>
+                        <li>True about cilia vs flagella? <br><strong>A: B. Cilia are shorter and more numerous</strong></li>
+                        <li>Long thread-like for movement? <br><strong>A: B. Flagella</strong></li>
+                        <li>Organelle with only one membrane? <br><strong>A: C. Lysosome</strong></li>
+                        <li>True about prokaryotic cells? <br><strong>A: C. Lack a nucleus and membrane-bound organelles</strong></li>
+                        <li>Size range of prokaryotic cells? <br><strong>A: A. 1-10 μm</strong></li>
+                        <li>Primary composition of prokaryotic cell wall? <br><strong>A: D. Peptidoglycan</strong></li>
+                        <li>Example of prokaryotic organism? <br><strong>A: C. Bacteria</strong></li>
+                        <li>True about eukaryotic cells? <br><strong>A: D. Contain membrane-bound organelles</strong></li>
+                        <li>Size range of eukaryotic cells? <br><strong>A: C. 10-100 μm</strong></li>
+                        <li>How is DNA organized in eukaryotic cells? <br><strong>A: C. Associated with proteins</strong></li>
+                        <li>Difference eukaryotic vs prokaryotic? <br><strong>A: D. Eukaryotic have membrane-bound organelles</strong></li>
+                        <li>Example of eukaryotic organism? <br><strong>A: B. Plants</strong></li>
+                        <li>Found in both plant and animal cells? <br><strong>A: A. Nucleus</strong></li>
+                        <li>Unique to plant cells? <br><strong>A: B. Chloroplasts</strong></li>
+                        <li>Unique to animal cells? <br><strong>A: C. Centrioles</strong></li>
+                        <li>True about plant cells? <br><strong>A: A. Contain chloroplasts</strong></li>
+                        <li>Function of large vacuole in plants? <br><strong>A: B. Regulating osmotic properties</strong></li>
+                        <li>Absent in animal, present in plant? <br><strong>A: C. Cell wall</strong></li>
+                        <li>Type of vacuole in animal cells? <br><strong>A: C. Smaller temporary vacuoles</strong></li>
+                        <li>True about animal cells? <br><strong>A: C. Contain centrioles and lysosomes</strong></li>
+                        <li>Shape of animal cells vs plant cells? <br><strong>A: B. Animal cells are more irregular</strong></li>
+                        <li>Stain for onion cells? <br><strong>A: D. Iodine solution</strong></li>
+                        <li>Collect cheek cells? <br><strong>A: C. Cotton bud</strong></li>
+                        <li>Lens used first? <br><strong>A: C. Lowest magnification lens</strong></li>
+                        <li>Stain for animal cells? <br><strong>A: B. Methylene blue</strong></li>
+                        <li>Maintain microscope after use? <br><strong>A: C. Clean lenses and slides</strong></li>
+                        <li>Defining feature of passive transport? <br><strong>A: C. Down gradient without energy</strong></li>
+                        <li>Ink spreading in water exemplifies? <br><strong>A: B. Diffusion</strong></li>
+                        <li>Steep concentration gradient effect? <br><strong>A: D. Diffuses more quickly</strong></li>
+                        <li>Sugar dissolves faster in hot tea why? <br><strong>A: D. Higher temp increases kinetic energy</strong></li>
+                        <li>Which gas diffuses faster? <br><strong>A: D. Hydrogen (H2)</strong></li>
+                        <li>Relationship formula for diffusion? <br><strong>A: B. Rate ∝ (Surface Area x Gradient) / Molecular Mass</strong></li>
+                        <li>Slowest rate of diffusion? <br><strong>A: D. Experiment 4</strong></li>
+                        <li>Factor affecting diffusion differently? <br><strong>A: C. Molecular Mass (inversely proportional)</strong></li>
+                        <li>Water movement across membrane? <br><strong>A: A. Osmosis</strong></li>
+                        <li>Solution causing animal cell to swell? <br><strong>A: C. Hypotonic</strong></li>
+                        <li>Red blood cells in hypotonic solution? <br><strong>A: D. Burst</strong></li>
+                        <li>Plant cell in hypertonic solution? <br><strong>A: D. Lose water and become plasmolized</strong></li>
+                        <li>RBC in 0.9% solution? <br><strong>A: B. Maintain its size</strong></li>
+                        <li>Plant cell (5%) in 10% solution? <br><strong>A: D. Water leaves, shrinks</strong></li>
+                        <li>Animal cell (5%) in 15% solution? <br><strong>A: B. Hypertonic outside</strong></li>
+                        <li>Plant cells prevent bursting by? <br><strong>A: C. Rigid cell wall</strong></li>
+                        <li>Cell most likely to burst in hypotonic? <br><strong>A: C. Animal cell</strong></li>
+                        <li>Best describes active transport? <br><strong>A: A. Low to high using energy</strong></li>
+                        <li>Glucose absorption against gradient? <br><strong>A: C. Active transport</strong></li>
+                        <li>Best describes a molecule? <br><strong>A: D. Atoms bonded together</strong></li>
+                        <li>True about a cell? <br><strong>A: B. Smallest functional unit of life</strong></li>
+                        <li>Xylem and phloem classified as? <br><strong>A: B. Tissue level</strong></li>
+                        <li>Example of an organ? <br><strong>A: C. Stomach</strong></li>
+                        <li>Missing level: Atoms->Molecules->?->Cell? <br><strong>A: A. Organelles</strong></li>
+                        <li>Circulatory system level? <br><strong>A: D. Organ system level</strong></li>
+                        <li>Level above organism? <br><strong>A: D. Population</strong></li>
+                        <li>Not a population? <br><strong>A: C. Zebras, giraffes, wildebeests</strong></li>
+                        <li>Populations interacting in an area? <br><strong>A: A. Community</strong></li>
+                        <li>Ecosystem has what community doesn't? <br><strong>A: B. Non-living factors</strong></li>
+                        <li>Community + physical environment? <br><strong>A: A. Ecosystem</strong></li>
+                        <li>Global sum of all ecosystems? <br><strong>A: C. Biosphere</strong></li>
+                    </ol>
+                </div>
+            </details>
+        </div>
+
+        <!-- ================== AFAAN OROMOO VERSION ================== -->
+        <div class="om-text">
+            <h2 class="section-title">1. Seeliin Maali?</h2>
+            <p>Seeliin wantoota lubbuu qaban keessaa xiqqaa fi bu'uura isaati. Organiizimoonni baay'ina seelii isaaniitiin seelii tokko (unicellular) ykn seelii hedduu (multicellular) jedhamanii ramadamu.</p>
+            <ul>
+                <li><strong>Seelii Tokko (Unicellular):</strong> Seelii tokko qofa irraa ijaaraman. Of danda'anii jiraachuu danda'u (fkn: Baakteeriyaa, protozoa, raayistii).</li>
+                <li><strong>Seelii Hedduu (Multicellular):</strong> Seelii adda addaa baay'ee irraa ijaaramanii hojii waliin hojjetan (fkn: Nama, biqiltuu).</li>
+            </ul>
+
+            <h2 class="section-title">2. Yaada Seelii (Cell Theory)</h2>
+            <ul>
+                <li><strong>Robert Hooke (1665):</strong> Qorqorroo (cork) maaykirooskooppiin ilaalee, maqaa "seelii" jedhu kenne.</li>
+                <li><strong>Antonie van Leeuwenhoek (1674):</strong> Seelii lubbuu qaban (baakteeriyaa, protozoa) ilaalee "animalcules" jedhee waame.</li>
+                <li><strong>Matthias Schleiden (1838):</strong> Biqiltoonni hundi seelii irraa ijaaraman jedhee dhiyeesse.</li>
+                <li><strong>Theodor Schwann (1839):</strong> Bineensota irrattis hojiin Schleiden babal'ate; lubbuun hundi seelii irraa ijaarama.</li>
+                <li><strong>Rudolf Virchow (1856):</strong> Seeliin hundi seelii duraan ture irraa uumama ("Omnis cellula e cellula").</li>
+            </ul>
+            <p><strong>Yaadota Ijoo Sadii:</strong> 1) Lubbuun hundi seelii tokko ykn isaa ol irraa ijaarama. 2) Seeliin bu'uura caasaa fi hojii lubbuu ti. 3) Seeliin hundi seelii duraan ture irraa uumama.</p>
+
+            <h2 class="section-title">3. Caasaa fi Hojii Seelii (Organelles)</h2>
+            <ul>
+                <li><strong>Dallaa Seelii (Cell Wall):</strong> Caasaa jabaa deeggarsa kennu. Biqiltoota, faanjii, algae fi baakteeriyaa keessatti argama. Bineensota keessatti hin argamu.</li>
+                <li><strong>Membraana Seelii (Cell Membrane):</strong> Qola qallaa, wantoota seelii keessa seenanii fi ba'an to'atu.</li>
+                <li><strong>Saayitooplaazimii (Cytoplasm):</strong> Dhangala'aa (70-80% bishaan) sochii keemikaalaa fi organelles qabu.</li>
+                <li><strong>Niwkiliyasii (Nucleus):</strong> Organelle guddaa, chromosomes (DNA) qabu, addaan ba'uu seelii to'ata. <strong>Nucleolus</strong> (ribosomes hojjetu) of keessatti qabata.</li>
+                <li><strong>Raayboosoomii (Ribosomes):</strong> Caasaa xiqqaa pirootiinii hojjetu (bilisaa ykn RER irratti argama).</li>
+                <li><strong>Endoplasmic Reticulum (ER):</strong> 
+                    <br>- <em>Rough ER (RER):</em> Raayboosoomii qaba; pirootiinii hojjete transport godha.
+                    <br>- <em>Smooth ER (SER):</em> Raayboosoomii hin qabu; liipiidii (lipid) hojjeta.
+                </li>
+                <li><strong>Vesicles:</strong> Korojoo xiqqaa wantoota kuusuu fi geejjibuuf gargaaru.</li>
+                <li><strong>Golgi Apparatus:</strong> Pirootiinii fi liipiidii qulqulleessee, paakijii godhee raabsa.</li>
+                <li><strong>Maayitookondiriyaa (Mitochondria):</strong> "Humna seelii." Membraana lama qaba; sochii respirationiin ATP (humna) oomisha.</li>
+                <li><strong>Lysosomes:</strong> Korojoo enzaayimii bulbuluu qabu, baakteeriyaa fi wantoota faayidaa hin qabne diigu.</li>
+                <li><strong>Vacuoles:</strong> Membraana tokko qaba. Seelii biqiltuu keessatti bal'aa (turgor eega). Seelii bineensa keessatti xiqqaa. (Food fi Contractile vacuoles ni dabalata).</li>
+                <li><strong>Chloroplasts:</strong> Membraana lama qaba; bakka photosynthesis; chlorophyll magariisa qaba (biqiltoota qofa).</li>
+                <li><strong>Centrioles & Microtubules:</strong> Addaan ba'uu seelii gargaaru. Centrioles seelii bineensa qofa keessa jira.</li>
+                <li><strong>Cilia & Flagella:</strong> Sochii (locomotion) ofii raawwachuuf. Cilia (gabaabaa, baay'ee), Flagella (dheeraa, muraasa).</li>
+            </ul>
+
+            <h2 class="section-title">4. Gosa Seelii</h2>
+            <ul>
+                <li><strong>Prokaryotic:</strong> "Niwkiliyasii dura." Xiqqaa (1-10 μm), organelles membraana qaban hin qabu. DNA geengoo. Dallaa seelii qaba (peptidoglycan). Fkn: Baakteeriyaa.</li>
+                <li><strong>Eukaryotic:</strong> "Niwkiliyasii dhugaa." Guddaa (10-100 μm), organelles membraana qaban qaba. DNA sararaawaa. Biqiltuun dallaa qaba; bineensi hin qabu. Fkn: Biqiltuu, Bineensa.</li>
+            </ul>
+
+            <h2 class="section-title">5. Seelii Biqiltuu fi Bineensaa</h2>
+            <p><strong>Seelii Biqiltuu:</strong> Guddaa, dallaa seelii jabaa, chloroplasts, vacuole guddaa dhaabbataa.</p>
+            <p><strong>Seelii Bineensaa:</strong> Boca wal hin fakkaanne, centrioles fi lysosomes qaba, dallaa seelii hin qabu, chloroplasts hin qabu, vacuole xiqqaa qaba.</p>
+
+            <h2 class="section-title">6. Maaykirooskooppiin Seelii Ilaaluu</h2>
+            <p><strong>Stain (Halluu):</strong> Iodine (seelii qullaa/biqiltuu), Methylene Blue (seelii bineensa/cheek).</p>
+            <p><strong>Tarkaanfiiwwan:</strong> Seelii qopheessi, halluu itti naqi, magnification xixiqqaan (fkn: 4x) jalqabi, coarse knob fayyadami, booda gara guddichaatti ce'ii fine knob fayyadami.</p>
+
+            <h2 class="section-title">7. Seelii fi Naannoo Isaa (Transport)</h2>
+            <ul>
+                <li><strong>Passive Transport:</strong> Humna hin barbaadu.
+                    <br>- <em>Diffusion:</em> Konkeentireeshinii olkaa irraa gara gadiitti. Saffisni isaa gradient, ho'ina, ulfina, fageenya fi bal'ina irratti hundaa'a.
+                    <br>- <em>Osmosis:</em> Bishaan membraana keessa darbuun olkaa irraa gara gadiitti.
+                </li>
+                <li><strong>Active Transport:</strong> Konkeentireeshinii gadi irraa gara olkaatti (membraana faallaa) humna (ATP) barbaachisuun socho'u. Fkn: Hiddi nyaata xuuxuu.</li>
+            </ul>
+            <p><strong>Sirna Osmosis:</strong></p>
+            <ul>
+                <li><em>Hypertonic:</em> Solute naannoo keessaa baay'ee. Bishaan seelii keessaa ba'a. Biqiltuun gogti (plasmolysis); bineensi xiqqaata.</li>
+                <li><em>Isotonic:</em> Solute walqixa. Bishaan hin socho'u.</li>
+                <li><em>Hypotonic:</em> Solute naannoo keessaa xiqqaa. Bishaan seelii keessa seena. Biqiltuun dhaabbataa (turgid) ta'a; bineensi dhiita'a (burst/Hemolysis).</li>
+            </ul>
+
+            <h2 class="section-title">8. Sadarkaalee Qindoomina Lubbuu</h2>
+            <p>Atoms → Molecules → Organelles → Cell → Tissue → Organ → Organ System → Organism → Population → Community → Ecosystem → Biosphere.</p>
+
+            <h2 class="section-title">9. Galmee Jechoota (Glossary)</h2>
+            <p><strong>Active Transport:</strong> Sochii humna barbaachisu.<br>
+            <strong>Animalcules:</strong> Maqaa Leeuwenhoek seelii lubbuuf kenne.<br>
+            <strong>Atoms:</strong> Wantoota xiqqaa dhugaa.<br>
+            <strong>Cell Membrane:</strong> Qola seelii wantoota to'atu.<br>
+            <strong>Cell Wall:</strong> Dallaa jabaa biqiltuu fi baakteeriyaa.<br>
+            <strong>Contractile Vacuoles:</strong> Bishaan dabalataa baasu.<br>
+            <strong>Cytoplasm:</strong> Dhangala'aa seelii keessaa.<br>
+            <strong>Diffusion:</strong> Sochii olkaa irraa gadiitti.<br>
+            <strong>Endoplasmic Reticulum:</strong> Sarara transport seelii.<br>
+            <strong>Eukaryotes:</strong> Seelii niwkiliyasii dhugaa qabu.<br>
+            <strong>Flagella:</strong> Caasaa dheeraa sochii.<br>
+            <strong>Golgi Apparatus:</strong> Organelle paakijii.<br>
+            <strong>Hypertonic:</strong> Solute baay'ee.<br>
+            <strong>Hypotonic:</strong> Solute xiqqaa.<br>
+            <strong>Isotonic:</strong> Solute walqixa.<br>
+            <strong>Lysosomes:</strong> Korojoo bulbuluu.<br>
+            <strong>Mitochondria:</strong> Humna (ATP) oomishu.<br>
+            <strong>Nucleus:</strong> Wiirtuu to'annoo DNA qabu.<br>
+            <strong>Osmosis:</strong> Bishaan membraana keessa darbu.<br>
+            <strong>Prokaryotes:</strong> Seelii niwkiliyasii hin qabne.<br>
+            <strong>Ribosomes:</strong> Pirootiinii hojjetu.<br>
+            <strong>Spontaneous Generation:</strong> Yaada lubbuun wantoota hin lubbuun irraa uumama jedhu (soba).<br>
+            <strong>Vacuoles:</strong> Korojoo kuusaa.</p>
+
+            <details>
+                <summary>Gaaffiiwwan Shaakalaa 100 fi Deebii isaanii Ilaaluuf Tuqi</summary>
+                <div class="quiz-box">
+                    <ol>
+                        <li>Bu'uura lubbuu maali? <br><strong>D: B. Seelii (Cell)</strong></li>
+                        <li>Fakkeenya seelii tokko qabu? <br><strong>D: C. Baakteeriyaa</strong></li>
+                        <li>Seelii tokko maaliin ibsama? <br><strong>D: C. Seelii tokkooti</strong></li>
+                        <li>Akka seelii tokkootti of danda'ee jiraachuu danda'u? <br><strong>D: B. Seelii Baakteeriyaa</strong></li>
+                        <li>Seelii hedduu qofa qaban? <br><strong>D: C. Nama, saree, muka</strong></li>
+                        <li>Seelii tokko fi hedduu gidduu garaagarummaa? <br><strong>D: D. Hedduun seelii baay'ee qaba</strong></li>
+                        <li>Maqaa "seelii" kennameef? <br><strong>D: A. Robert Hooke</strong></li>
+                        <li>Seelii lubbuu qaban ilaalee animalcules jedhe? <br><strong>D: B. van Leeuwenhoek</strong></li>
+                        <li>Gumaacha Schleiden? <br><strong>D: A. Biqiltoonni seelii irraa ijaaramu</strong></li>
+                        <li>Gumaacha Schwann? <br><strong>D: B. Bineensonni seelii irraa ijaaramu</strong></li>
+                        <li>Ibsa Rudolf Virchow? <br><strong>D: C. Seeliin seelii duraan ture irraa uumama</strong></li>
+                        <li>Yaada Seelii irratti sirrii? <br><strong>D: D. Lubbuun hundi seelii tokko ykn isaa ol qaba</strong></li>
+                        <li>Tartiiba sirrii ta'e? <br><strong>D: A. ii, i, iii, iv, v</strong></li>
+                        <li>Seelii lubbuu qaban hundaaf waliinii? <br><strong>D: D. Membraanaan marfamuu</strong></li>
+                        <li>Hojii dallaa seelii? <br><strong>D: C. Deeggarsa fi boca eeguu</strong></li>
+                        <li>Seelii dallaa qaban? <br><strong>D: A. Seelii Biqiltuu</strong></li>
+                        <li>Hojii ijoo membraana seelii? <br><strong>D: D. Wantoota seenanii fi ba'an to'achuu</strong></li>
+                        <li>Membraana seelii maaliin ibsama? <br><strong>D: D. Selectively permeable (Filannoodhaan darbu)</strong></li>
+                        <li>Qindoomina saayitooplaazimii? <br><strong>D: B. Bishaan fi molekiyuloota bulbulaman</strong></li>
+                        <li>Gahee saayitooplaazimii? <br><strong>D: C. Bakka sochii keemikaalaa</strong></li>
+                        <li>Hojii niwkiliyasii? <br><strong>D: C. Addan ba'uu seelii to'achuu</strong></li>
+                        <li>Niwkiliyasii keessatti raayboosoomii hojjetu? <br><strong>D: A. Nucleolus</strong></li>
+                        <li>Niwkiliyasii keessa jiru? <br><strong>D: D. Chromosomes</strong></li>
+                        <li>Bilisaa ykn RER irratti argamu? <br><strong>D: D. Ribosome</strong></li>
+                        <li>Hojii raayboosoomii? <br><strong>D: C. Pirootiinii hojjetu</strong></li>
+                        <li>Wanti raayboosoomii irratti sobbooftu? <br><strong>D: C. Seelii bineensa qofa keessa jiraachuu</strong></li>
+                        <li>Sarara membraana lama transport? <br><strong>D: D. Endoplasmic Reticulum</strong></li>
+                        <li>Hojii RER? <br><strong>D: B. Pirootiinii hojjetu</strong></li>
+                        <li>Maaliif RER jedhame? <br><strong>D: B. Raayboosoomii qabaachuu isaatiin</strong></li>
+                        <li>Hojii SER? <br><strong>D: C. Liipiidii hojjetu</strong></li>
+                        <li>Garaagarummaa SER fi RER? <br><strong>D: C. SER calaa, RER raayboosoomii qaba</strong></li>
+                        <li>Pirootiinii RER erga vesicles keessa galame booda eessa dhaqa? <br><strong>D: D. Golgi apparatus</strong></li>
+                        <li>Kuusuu fi geejjibuuf gargaaru? <br><strong>D: C. Vesicles</strong></li>
+                        <li>Pirootiinii fi liipiidii jijjiiru? <br><strong>D: B. Golgi apparatus</strong></li>
+                        <li>Membraana maayitookondiriyaa dhangala'aa to'atu? <br><strong>D: B. Outer membrane</strong></li>
+                        <li>Maayitookondiriyaan maaliif powerhouse jedhama? <br><strong>D: B. Humna (ATP) oomisha</strong></li>
+                        <li>Seelii maayitookondiriyaa baay'ee qabu? <br><strong>D: A. Seelii maashii (Muscle cells)</strong></li>
+                        <li>Hojii lysosomes hin taane? <br><strong>D: C. Pirootiinii hojjetu</strong></li>
+                        <li>Seelii biqiltuu keessaa baay'ina qabatu? <br><strong>D: C. Vacuole (Nucleus jedha moo Vacuole? PDF'n C. Nucleus jedha)</strong></li>
+                        <li>Kuusaa, bulbuluu fi madaallii gargaaru? <br><strong>D: A. Vacuole</strong></li>
+                        <li>Wanti chloroplasts irratti sirrii? <br><strong>D: D. Chlorophyll qaba, photosynthesis keessatti hirmaata</strong></li>
+                        <li>Fibraa xiqqaa addaan ba'uu fi deeggarsa? <br><strong>D: B. Microtubules</strong></li>
+                        <li>Seelii bineensa keessatti microtubules qabatu? <br><strong>D: A. Centrioles</strong></li>
+                        <li>Cilia fi flagella gidduu? <br><strong>D: B. Cilia gabaabaa fi baay'ee</strong></li>
+                        <li>Caasaa dheeraa sochii? <br><strong>D: B. Flagella</strong></li>
+                        <li>Organelle membraana tokko qabu? <br><strong>D: C. Lysosome</strong></li>
+                        <li>Seelii prokaryotic irratti sirrii? <br><strong>D: C. Niwkiliyasii fi organelles hin qabu</strong></li>
+                        <li>Bal'ina seelii prokaryotic? <br><strong>D: A. 1-10 μm</strong></li>
+                        <li>Dallaa seelii prokaryotic maal irraa hojjetame? <br><strong>D: D. Peptidoglycan</strong></li>
+                        <li>Fakkeenya prokaryotic? <br><strong>D: C. Baakteeriyaa</strong></li>
+                        <li>Seelii eukaryotic irratti sirrii? <br><strong>D: D. Organelles membraana qaban qaba</strong></li>
+                        <li>Bal'ina seelii eukaryotic? <br><strong>D: C. 10-100 μm</strong></li>
+                        <li>DNA eukaryotic akkamitti qindaa'a? <br><strong>D: C. Pirootiinii waliin</strong></li>
+                        <li>Garaagarummaa eukaryotic fi prokaryotic? <br><strong>D: D. Eukaryotic organelles qaba, prokaryotic hin qabu</strong></li>
+                        <li>Fakkeenya eukaryotic? <br><strong>D: B. Biqiltuu</strong></li>
+                        <li>Lamaanuu keessa jiru? <br><strong>D: A. Nucleus</strong></li>
+                        <li>Seelii biqiltuu qofa keessa jiru? <br><strong>D: B. Chloroplasts</strong></li>
+                        <li>Seelii bineensa qofa keessa jiru? <br><strong>D: C. Centrioles</strong></li>
+                        <li>Seelii biqiltuu irratti sirrii? <br><strong>D: A. Chloroplasts qaba</strong></li>
+                        <li>Hojii vacuole guddaa biqiltuu? <br><strong>D: B. Haala osmotic to'achuu</strong></li>
+                        <li>Bineensa keessa hin jirre, biqiltuu keessa jiru? <br><strong>D: C. Cell wall</strong></li>
+                        <li>Vacuole seelii bineensaa? <br><strong>D: C. Xiqqaa fi yeroo muraasaaf jiraatu</strong></li>
+                        <li>Seelii bineensa irratti sirrii? <br><strong>D: C. Centrioles fi lysosomes qaba</strong></li>
+                        <li>Boca seelii bineensa fi biqiltuu? <br><strong>D: B. Bineensi boca wal hin fakkaanne qaba</strong></li>
+                        <li>Halluu seelii qullaa? <br><strong>D: D. Iodine solution</strong></li>
+                        <li>Seelii cheek funaanu? <br><strong>D: C. Cotton bud</strong></li>
+                        <li>Lensii jalqaba fayyadamnu? <br><strong>D: C. Lowest magnification lens</strong></li>
+                        <li>Halluu seelii bineensaa? <br><strong>D: B. Methylene blue</strong></li>
+                        <li>Maaykirooskooppii eeguu? <br><strong>D: C. Lensiifi slide qulqulleessuu</strong></li>
+                        <li>Amala passive transport? <br><strong>D: C. Gadi bu'uu humna malee</strong></li>
+                        <li>Qalama bishaan keessa faca'uu maali? <br><strong>D: B. Diffusion</strong></li>
+                        <li>Gradient cimaa fi diffusion? <br><strong>D: D. Saffisaan darba</strong></li>
+                        <li>Shukkaari shayii ho'aa keessa saffisaan bulbulu maaliif? <br><strong>D: D. Ho'inni anniisaa sochii dabala</strong></li>
+                        <li>Gaasi saffisaan diffusion godhu? <br><strong>D: D. Hydrogen (H2)</strong></li>
+                        <li>Formula diffusion? <br><strong>D: B. Rate ∝ (Surface Area x Gradient) / Molecular Mass</strong></li>
+                        <li>Diffusion suuta jedhu? <br><strong>D: D. Experiment 4</strong></li>
+                        <li>Amala diffusion adda ta'e? <br><strong>D: C. Molecular Mass</strong></li>
+                        <li>Bishaan membraana keessa darbu? <br><strong>D: A. Osmosis</strong></li>
+                        <li>Seelii bineensa dhiisu solution? <br><strong>D: C. Hypotonic</strong></li>
+                        <li>RBC hypotonic keessa? <br><strong>D: D. Dhiita'a (Burst)</strong></li>
+                        <li>Seelii biqiltuu hypertonic keessa? <br><strong>D: D. Bishaan dhabdee gogti (plasmolysis)</strong></li>
+                        <li>RBC 0.9% solution keessa? <br><strong>D: B. Akkuma jirutti hafa</strong></li>
+                        <li>Biqiltuu (5%) 10% solution keessa? <br><strong>D: D. Bishaan baasee xiqqaata</strong></li>
+                        <li>Bineensa (5%) 15% solution keessa? <br><strong>D: B. Hypertonic solution</strong></li>
+                        <li>Biqiltuun maaliif hin dhiitu? <br><strong>D: C. Dallaa seelii jabaa qabaachuu isaatiin</strong></li>
+                        <li>Seelii dhiituuf dhihoo? <br><strong>D: C. Animal cell</strong></li>
+                        <li>Active transport maali? <br><strong>D: A. Gadi irraa gara olkaatti humnaan</strong></li>
+                        <li>Glucose xuuxuu? <br><strong>D: C. Active transport</strong></li>
+                        <li>Molekiyulii maali? <br><strong>D: D. Atoms walitti makaman</strong></li>
+                        <li>Seelii irratti sirrii? <br><strong>D: B. Bu'uura lubbuu xiqqaa</strong></li>
+                        <li>Xylem fi phloem sadarkaa? <br><strong>D: B. Tissue level</strong></li>
+                        <li>Fakkeenya organ? <br><strong>D: C. Stomach</strong></li>
+                        <li>Atoms->Molecules->?->Cell? <br><strong>D: A. Organelles</strong></li>
+                        <li>Sirna circulatory? <br><strong>D: D. Organ system level</strong></li>
+                        <li>Sadarkaa organisma ol? <br><strong>D: D. Population</strong></li>
+                        <li>Population hin taane? <br><strong>D: C. Zebras, giraffes, wildebeests</strong></li>
+                        <li>Populations walitti makaman? <br><strong>D: A. Community</strong></li>
+                        <li>Ecosystem maal dabalata qaba? <br><strong>D: B. Non-living factors</strong></li>
+                        <li>Community + physical environment? <br><strong>D: A. Ecosystem</strong></li>
+                        <li>Ecosystems hunda walitti qabate? <br><strong>D: C. Biosphere</strong></li>
+                    </ol>
+                </div>
+            </details>
+        </div>
+
+    </div>
+
+    <script src="../js/app.js"></script>
+</body>
+</html>

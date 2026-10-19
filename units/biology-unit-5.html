@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biology Unit 5 - Grade 9</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .quiz-box {
+            background-color: #e8f4f8;
+            border-left: 5px solid #3498db;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .quiz-box h4 { color: #2980b9; margin-bottom: 10px; }
+        .quiz-box ol { margin-left: 20px; }
+        .quiz-box li { margin-bottom: 8px; }
+        
+        details {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        summary {
+            font-weight: bold;
+            cursor: pointer;
+            color: #d35400;
+            padding: 10px;
+            background-color: #fdf2e9;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html" class="back-btn">⬅ Deebi'i (Home)</a>
+
+    <div style="text-align: center;">
+        <button id="langBtn" class="lang-btn" onclick="toggleLanguage()">Afaan Oromoo</button>
+    </div>
+
+    <a href="../pdfs/biology-unit-5.pdf" target="_blank" class="pdf-btn">📄 Download PDF (Unit 5)</a>
+
+    <div class="unit-content">
+        
+        <!-- ================== ENGLISH VERSION ================== -->
+        <div class="en-text">
+            <h2 class="section-title">1. Food and Nutrition</h2>
+            <p><strong>Food:</strong> Any beneficial substance eaten, drunk, or taken into the body to sustain life, provide energy, and promote growth.</p>
+            <ul>
+                <li><strong>Importance:</strong> Growth, Energy, Replacement of damaged tissues, Protection from diseases.</li>
+                <li><strong>Nutrition:</strong> The process of taking in food and converting it into energy and nutrients (Ingestion, Digestion, Absorption, Assimilation).</li>
+            </ul>
+
+            <h2 class="section-title">2. Nutrients</h2>
+            <p><strong>Macronutrients:</strong> Needed in large amounts (Carbohydrates, Proteins, Fats).<br>
+            <strong>Micronutrients:</strong> Needed in small amounts (Vitamins, Minerals).</p>
+            <ul>
+                <li><strong>Carbohydrates:</strong> Main energy source (1g = 16KJ). Types: Monosaccharides (Glucose, Fructose, Galactose), Disaccharides (Maltose, Sucrose, Lactose), Polysaccharides (Cellulose, Starch, Glycogen). Fiber prevents constipation.</li>
+                <li><strong>Lipids (Fats & Oils):</strong> High energy (1g = 37KJ). Store energy, insulate, absorb fat-soluble vitamins (A, D, E, K). Fats are solid (animals), Oils are liquid (plants).</li>
+                <li><strong>Proteins:</strong> Made of amino acids. Contain Carbon, Hydrogen, Oxygen, Nitrogen. For growth, repair, and structure.</li>
+                <li><strong>Vitamins:</strong> Organic molecules for metabolic regulation. 
+                    <br>- <em>Water-soluble:</em> B-complex, C.
+                    <br>- <em>Fat-soluble:</em> A, D, E, K.
+                </li>
+                <li><strong>Minerals:</strong> Inorganic substances. Calcium (bones), Iron (hemoglobin), Iodine (thyroid), Phosphorus (bones/teeth).</li>
+                <li><strong>Water:</strong> 60% of adult body. Solvent, transport, temperature regulation.</li>
+            </ul>
+
+            <h2 class="section-title">3. Balanced Diet & Malnutrition</h2>
+            <ul>
+                <li><strong>Balanced Diet:</strong> Contains all nutrients in correct amounts. Depends on age, sex, activity.</li>
+                <li><strong>Deficiency Diseases:</strong> 
+                    <br>- <em>Marasmus:</em> Inadequate carbohydrate/protein (thin, old-looking).
+                    <br>- <em>Kwashiorkor:</em> Inadequate protein (swollen abdomen/legs, flaky skin).
+                    <br>- <em>Anemia:</em> Lack of iron (weak, tired).
+                    <br>- <em>Rickets:</em> Lack of Vitamin D (deformed bones).
+                    <br>- <em>Scurvy:</em> Lack of Vitamin C (bleeding gums).
+                </li>
+                <li><strong>Malnutrition:</strong> Insufficient, excessive, or imbalanced nutrients.
+                    <br>- <em>Wasting:</em> Low weight-for-height.
+                    <br>- <em>Stunting:</em> Low height-for-age.
+                    <br>- <em>Underweight:</em> Low weight-for-age (BMI < 18.5).
+                    <br>- <em>Overweight/Obesity:</em> BMI 25-30 / >30. Risk of heart disease, diabetes.
+                </li>
+            </ul>
+
+            <h2 class="section-title">4. Substance Abuse</h2>
+            <p>Using drugs in the wrong way or excess amount.</p>
+            <ul>
+                <li><strong>Cigarettes:</strong> Contains Tar (cancer), CO (reduces O2), Nicotine (addictive stimulant).</li>
+                <li><strong>Alcohol:</strong> Depressant. Causes loss of coordination, liver cirrhosis, brain damage.</li>
+                <li><strong>Heroin:</strong> Synthetic morphine derivative. Powerful depressant, highly addictive.</li>
+                <li><strong>Cannabis (Marijuana):</strong> Contains THC. Causes hallucinations, panic, psychosis in high amounts.</li>
+                <li><strong>Khat (Catha edulis):</strong> Contains cathinone (stimulant). Causes depression when not used, socio-economic issues.</li>
+                <li><strong>Doping:</strong> Using prohibited substances in sports (banned by WADA). Risks: heart disease, infertility, psychosis.</li>
+            </ul>
+
+            <h2 class="section-title">5. Infectious and Non-Infectious Diseases</h2>
+            <ul>
+                <li><strong>Infectious Diseases:</strong> Caused by pathogens (bacteria, virus, protozoa, fungi). Transmitted via contact, water, insects.
+                    <br>- <em>HIV/AIDS:</em> Attacks CD4 (T cells). Transmitted via blood/fluids. No cure, but ART controls it.
+                    <br>- <em>Tuberculosis (TB):</em> Mycobacterium tuberculosis. Affects lungs. Droplet transmission. BCG vaccine.
+                    <br>- <em>Malaria:</em> Plasmodium spp. Vector: Anopheles mosquito.
+                    <br>- <em>COVID-19:</em> SARS-CoV-2. Respiratory droplets.
+                </li>
+                <li><strong>Non-Infectious Diseases:</strong> Not caused by pathogens. 
+                    <br>- Malnutrition (Scurvy, Kwashiorkor).
+                    <br>- Cigarette smoke (Lung cancer, Bronchitis).
+                    <br>- Genetic factors (Sickle cell anemia, Hemophilia).
+                    <br>- Unhealthy diets (Obesity, High BP).
+                    <br>- Old age (Osteoporosis, Arthritis, Alzheimer's).
+                </li>
+            </ul>
+
+            <h2 class="section-title">6. Glossary of Terms</h2>
+            <p><strong>Absorption:</strong> Uptake of nutrients into the bloodstream.<br>
+            <strong>AIDS:</strong> Acquired Immune Deficiency Syndrome.<br>
+            <strong>Anemia:</strong> Low hemoglobin/red blood cells.<br>
+            <strong>Assimilation:</strong> Conversion of nutrients into specific molecules.<br>
+            <strong>Balanced diet:</strong> Diet with 6 essential nutrients in proper amounts.<br>
+            <strong>BMI:</strong> Body mass (kg) / Height (m²).<br>
+            <strong>Calorie:</strong> Measure of energy in food.<br>
+            <strong>Carbohydrates:</strong> Major energy source (CH2O).<br>
+            <strong>Cirrhosis:</strong> Chronic liver injury (often alcohol).<br>
+            <strong>Deficiency diseases:</strong> Health issues from lack of specific nutrients.<br>
+            <strong>Depressant:</strong> Drug that reduces functional activity.<br>
+            <strong>Digestion:</strong> Breakdown of food.<br>
+            <strong>Disease:</strong> Body does not function normally.<br>
+            <strong>Doping:</strong> Using banned substances to enhance sports performance.<br>
+            <strong>Drug:</strong> Substance that changes chemical reactions in the body.<br>
+            <strong>Fats:</strong> High-energy lipid molecules.<br>
+            <strong>Fiber:</strong> Indigestible polysaccharides that aid digestion.<br>
+            <strong>Fructose:</strong> Fruit sugar.<br>
+            <strong>Glucose:</strong> Blood sugar, main energy building block.<br>
+            <strong>HIV:</strong> Virus that attacks the immune system.<br>
+            <strong>Ingestion:</strong> Taking food into the body.<br>
+            <strong>Joule:</strong> Unit of energy.<br>
+            <strong>Khat:</strong> Stimulant plant chewed in East Africa.<br>
+            <strong>Kwashiorkor:</strong> Protein deficiency disease.<br>
+            <strong>Macronutrients:</strong> Needed in large amounts (Carbs, Fats, Protein).<br>
+            <strong>Malnutrition:</strong> Insufficient, excessive, or imbalanced nutrients.<br>
+            <strong>Marasmus:</strong> Deficiency of calories and protein.<br>
+            <strong>Micronutrients:</strong> Needed in small amounts (Vitamins, Minerals).<br>
+            <strong>Nutrition:</strong> Process of taking in and using food.<br>
+            <strong>Obesity:</strong> Excess body fat (BMI > 30).<br>
+            <strong>Proteins:</strong> Polymers of amino acids for structure and function.<br>
+            <strong>Rickets:</strong> Vitamin D deficiency causing weak bones.<br>
+            <strong>Scurvy:</strong> Vitamin C deficiency.<br>
+            <strong>Stunting:</strong> Low height-for-age.<br>
+            <strong>Substance abuse:</strong> Harmful use of psychoactive substances.<br>
+            <strong>Vitamins:</strong> Organic molecules needed in small amounts.</p>
+
+            <details>
+                <summary>Click to View 70 Review Questions & Answers</summary>
+                <div class="quiz-box">
+                    <ol>
+                        <li>What is food? <br><strong>A: D. A substance that sustains life and provides energy</strong></li>
+                        <li>NOT a source of food? <br><strong>A: A. Soil</strong></li>
+                        <li>Primary role of food? <br><strong>A: D. To provide energy and nutrients</strong></li>
+                        <li>What is nutrition? <br><strong>A: D. The process of taking in food and converting it into energy</strong></li>
+                        <li>Macronutrients? <br><strong>A: C. Nutrients required in large amounts</strong></li>
+                        <li>Micronutrient? <br><strong>A: C. Vitamin C</strong></li>
+                        <li>Primary source of energy? <br><strong>A: B. Carbohydrates</strong></li>
+                        <li>Contains only monosaccharides? <br><strong>A: B. Glucose, Fructose, Galactose</strong></li>
+                        <li>Disaccharide? <br><strong>A: C. Sucrose</strong></li>
+                        <li>Correctly matches disaccharide with monosaccharides? <br><strong>A: C. Lactose - Glucose + Galactose</strong></li>
+                        <li>What type of carbohydrate is cellulose? <br><strong>A: D. Polysaccharide</strong></li>
+                        <li>Major function of fats? <br><strong>A: B. To store energy and provide insulation</strong></li>
+                        <li>Proteins made of? <br><strong>A: D. Amino acids</strong></li>
+                        <li>Responsible for muscle growth? <br><strong>A: C. Proteins</strong></li>
+                        <li>Element in proteins but not carbs/fats? <br><strong>A: C. Nitrogen</strong></li>
+                        <li>Function of vitamin A? <br><strong>A: D. Immune function and vision</strong></li>
+                        <li>Vegetable for night vision? <br><strong>A: A. Carrot</strong></li>
+                        <li>Vitamin for collagen? <br><strong>A: B. Vitamin C</strong></li>
+                        <li>Primary function of calcium? <br><strong>A: C. To build bones and teeth</strong></li>
+                        <li>Mineral for thyroid hormones? <br><strong>A: B. Iodine</strong></li>
+                        <li>Mineral for red blood cells? <br><strong>A: A. Iron</strong></li>
+                        <li>Main role of water? <br><strong>A: D. To transport nutrients and waste</strong></li>
+                        <li>Inadequate essential nutrients? <br><strong>A: B. Deficiency diseases</strong></li>
+                        <li>Requires rich protein/calories for muscle? <br><strong>A: B. Athletes</strong></li>
+                        <li>Primary symptom of anemia? <br><strong>A: D. Weakness and fatigue</strong></li>
+                        <li>Insufficient carbs risk? <br><strong>A: C. Marasmus</strong></li>
+                        <li>Swollen abdomen, dry skin, irritability? <br><strong>A: D. Kwashiorkor</strong></li>
+                        <li>Best source of Vitamin C? <br><strong>A: C. Citrus fruits</strong></li>
+                        <li>Poor wound healing and swollen gums? <br><strong>A: C. Vitamin C</strong></li>
+                        <li>Very thin for height? <br><strong>A: B. Wasting</strong></li>
+                        <li>Shorter than expected height for age? <br><strong>A: C. Stunting</strong></li>
+                        <li>Underweight definition? <br><strong>A: B. Low weight-for-age</strong></li>
+                        <li>High-fat foods, no activity leads to? <br><strong>A: B. Obesity</strong></li>
+                        <li>Health problem directly with obesity? <br><strong>A: D. High blood pressure</strong></li>
+                        <li>How is BMI calculated? <br><strong>A: B. Body mass (kg) / height² (m²)</strong></li>
+                        <li>BMI of 32 falls under? <br><strong>A: A. Obese</strong></li>
+                        <li>1.73m, 45kg. Minimum weight to gain for normal BMI? <br><strong>A: D. 10.4 kg</strong></li>
+                        <li>Prevent obesity? <br><strong>A: D. Going to school by walking</strong></li>
+                        <li>Child's growth permanently affected by poor nutrition? <br><strong>A: B. Stunting</strong></li>
+                        <li>Chemical in smoke with carcinogens? <br><strong>A: A. Tar</strong></li>
+                        <li>Active ingredient in tobacco causing addiction? <br><strong>A: B. Nicotine</strong></li>
+                        <li>Combines with hemoglobin, reduces O2? <br><strong>A: D. Carbon monoxide</strong></li>
+                        <li>Active ingredient in marijuana? <br><strong>A: D. Tetrahydrocannabinol (THC)</strong></li>
+                        <li>Liver scar tissue due to alcohol? <br><strong>A: A. Cirrhosis</strong></li>
+                        <li>Heroin classified as? <br><strong>A: C. Depressant</strong></li>
+                        <li>Active compound in khat? <br><strong>A: D. Cathinone</strong></li>
+                        <li>Oral health problem from khat? <br><strong>A: D. Gum disease and tooth decay</strong></li>
+                        <li>Why doping threatens spirit of sport? <br><strong>A: D. Unfair advantage</strong></li>
+                        <li>Consequence of caught doping? <br><strong>A: C. Loss of results and medals</strong></li>
+                        <li>Body does not function normally? <br><strong>A: C. Disease</strong></li>
+                        <li>Infectious disease? <br><strong>A: C. Tuberculosis</strong></li>
+                        <li>NOT typically responsible for infectious diseases? <br><strong>A: D. Algae</strong></li>
+                        <li>How infectious diseases transmitted? <br><strong>A: A. Direct contact</strong></li>
+                        <li>Method to prevent infectious diseases? <br><strong>A: B. Practicing personal hygiene</strong></li>
+                        <li>Main target of HIV? <br><strong>A: A. T cells</strong></li>
+                        <li>How is HIV transmitted? <br><strong>A: D. Through sharing needles</strong></li>
+                        <li>Role of ART in HIV? <br><strong>A: D. Controls the virus and improves immunity</strong></li>
+                        <li>Stage leading to life-threatening infections? <br><strong>A: A. AIDS</strong></li>
+                        <li>Causative agent of TB? <br><strong>A: D. Mycobacterium tuberculosis</strong></li>
+                        <li>Organ primarily affected by TB? <br><strong>A: C. Lungs</strong></li>
+                        <li>Common transmission of TB? <br><strong>A: C. Airborne droplets</strong></li>
+                        <li>Used to prevent TB? <br><strong>A: D. BCG vaccine</strong></li>
+                        <li>Vector for malaria? <br><strong>A: D. Anopheles mosquito</strong></li>
+                        <li>Regions malaria most commonly found? <br><strong>A: D. Tropical and subtropical</strong></li>
+                        <li>Effective way to control malaria? <br><strong>A: D. Using antimalarial drugs</strong></li>
+                        <li>Virus causing COVID-19? <br><strong>A: B. SARS-CoV-2</strong></li>
+                        <li>Reduce risk of COVID-19? <br><strong>A: C. Washing hands regularly</strong></li>
+                        <li>Non-infectious disease? <br><strong>A: D. Disease not caused by pathogens</strong></li>
+                        <li>Non-infectious caused by nutritional deficiency? <br><strong>A: B. Scurvy</strong></li>
+                        <li>Non-infectious caused by genetic factor? <br><strong>A: C. Sickle cell anemia</strong></li>
+                    </ol>
+                </div>
+            </details>
+        </div>
+
+        <!-- ================== AFAAN OROMOO VERSION ================== -->
+        <div class="om-text">
+            <h2 class="section-title">1. Nyaata fi Sirna Nyaataa (Food and Nutrition)</h2>
+            <p><strong>Nyaata (Food):</strong> Wantoota faayidaa qaban kanneen lubbuu itti fufsiisuuf, humna kennuuf fi guddinaaf qaama keessa galfaman.</p>
+            <ul>
+                <li><strong>Faayidaa:</strong> Guddina, Humna, Seelii miidhame bakka buusuu, Dhukkuboota irraa eeguu.</li>
+                <li><strong>Sirna Nyaataa (Nutrition):</strong> Adeemsa nyaata fudhachuu fi gara humnaatti jijjiiruu (Liqimsuu, Daakuu, Xuuxuu, Gara seelii geessuu).</li>
+            </ul>
+
+            <h2 class="section-title">2. Soorata (Nutrients)</h2>
+            <p><strong>Macronutrients:</strong> Baay'inaan barbaachisan (Karbohayidreeitii, Pirootiinii, Cooma).<br>
+            <strong>Micronutrients:</strong> Muraasa barbaachisan (Vitamins, Minerals).</p>
+            <ul>
+                <li><strong>Karbohayidreeitii:</strong> Madda humna ijoo (1g = 16KJ). Gosa isaa: Monosaccharides (Glucose, Fructose, Galactose), Disaccharides (Maltose, Sucrose, Lactose), Polysaccharides (Cellulose, Starch, Glycogen). Fiber (roughage) garaa cimuu dhoorka.</li>
+                <li><strong>Liipiidii (Cooma fi Zayitii):</strong> Humna olkaa'aa (1g = 37KJ). Humna kuusa, qaama ho'isa, vitamins A, D, E, K xuuxuuf gargaara. Coomni jabaa (bineensa), zayitiin dhangala'aa (biqiltuu).</li>
+                <li><strong>Pirootiinii:</strong> Amino acids irraa ijaarama. Carbon, Hydrogen, Oxygen, Nitrogen qaba. Guddina, suphaa fi caasaa seelii.</li>
+                <li><strong>Vitamins:</strong> Molekiyuloota orgaanikii sochii metaboolizimii to'atan. 
+                    <br>- <em>Bishaan keessa bulbulu:</em> B-complex, C.
+                    <br>- <em>Cooma keessa bulbulu:</em> A, D, E, K.
+                </li>
+                <li><strong>Minerals:</strong> Wantoota orgaanikii hin taane. Calcium (lafee), Iron (dhiiga), Iodine (thyroid), Phosphorus (lafee/ilkaan).</li>
+                <li><strong>Bishaan:</strong> Qaama nama guddaa 60% ta'a. Wantoota bulbulu, geejjibu, ho'ina qaamaa to'ata.</li>
+            </ul>
+
+            <h2 class="section-title">3. Sirna Nyaata Madaalawaa fi Hanga Nyaataa (Balanced Diet & Malnutrition)</h2>
+            <ul>
+                <li><strong>Sirna Nyaata Madaalawaa:</strong> Soorata hunda baay'ina sirriin qabata. Umrii, saala, sochii irratti hundaa'a.</li>
+                <li><strong>Dhukkuboota Hanqina Soorataa (Deficiency Diseases):</strong> 
+                    <br>- <em>Marasmus:</em> Hanqina karbohayidreeitii/pirootiinii (huqqisaa, fuulli dulloomaa).
+                    <br>- <em>Kwashiorkor:</em> Hanqina pirootiinii (garaan fi miilli dhiita'a, gogaa gogaa).
+                    <br>- <em>Anemia:</em> Hanqina sibiilaa (dadhabbii, tiruu).
+                    <br>- <em>Rickets:</em> Hanqina Vitamin D (lafeen badaa'aa).
+                    <br>- <em>Scurvy:</em> Hanqina Vitamin C (lafeen gumaa dhiigu).
+                </li>
+                <li><strong>Hanga Nyaataa (Malnutrition):</strong> Nyaata gahaa dhabuu, dabaluu ykn madaallii dhabuu.
+                    <br>- <em>Wasting:</em> Ulfina dheerinaaf gadi aanaa.
+                    <br>- <em>Stunting:</em> Dheerina umriif gadi aanaa.
+                    <br>- <em>Underweight:</em> Ulfina umriif gadi aanaa (BMI < 18.5).
+                    <br>- <em>Overweight/Obesity:</em> BMI 25-30 / >30. Dhukkuba onnee, sukkaara dhiitaa (diabetes) fiduu danda'a.
+                </li>
+            </ul>
+
+            <h2 class="section-title">4. Fayyadama Qoricha Badaa (Substance Abuse)</h2>
+            <p>Qoricha karaa dogoggora ykn baay'inaan fayyadamuu.</p>
+            <ul>
+                <li><strong>Sijaaraa:</strong> Tar (kanserii), CO (O2 hir'isa), Nicotine (addictive stimulant) qaba.</li>
+                <li><strong>Alkoolii:</strong> Depressant. Madaallii dhabuu, tiruu (cirrhosis), sammuu miidha.</li>
+                <li><strong>Heroin:</strong> Morphine irraa hojjetame. Depressant cimaa, addictive.</li>
+                <li><strong>Cannabis (Marijuana):</strong> THC qaba. Baay'inaan yoo fayyadame hallucination, panic, psychosis fidu.</li>
+                <li><strong>Jimaa (Khat):</strong> Cathinone (stimulant) qaba. Yoo dhaabne depression, rakkoo hawaasummaa fi dinagdee fidu.</li>
+                <li><strong>Doping:</strong> Ispoortii keessatti wantoota dhorkaman fayyadamuu (WADA dhoorka). Balaa: dhukkuba onnee, maseena, psychosis.</li>
+            </ul>
+
+            <h2 class="section-title">5. Dhukkuboota Daddarbanii fi Hin Daddarbne (Infectious & Non-Infectious)</h2>
+            <ul>
+                <li><strong>Dhukkuboota Daddarban (Infectious):</strong> Paatojeenoota (baakteeriyaa, vaayirasii, protozoa, faanjii) irraa dhufu. Quunnamtii, bishaan, ilbiisaan daddarbu.
+                    <br>- <em>HIV/AIDS:</em> Seelii nageenyaa (CD4/T cells) miidha. Dhiigaan/dhangala'aan daddarba. Qorichi hin jiru, garuu ART waliin jiraachuu danda'a.
+                    <br>- <em>Tuberculosis (TB):</em> Mycobacterium tuberculosis. Somba miidha. Haaraan daddarba. Talaallii BCG.
+                    <br>- <em>Malaria:</em> Plasmodium spp. Vector: Bookee Anopheles.
+                    <br>- <em>COVID-19:</em> SARS-CoV-2. Haaraan daddarba.
+                </li>
+                <li><strong>Dhukkuboota Hin Daddarbne (Non-Infectious):</strong> Paatojeenootaan hin dhufan. 
+                    <br>- Hanga nyaataa (Scurvy, Kwashiorkor).
+                    <br>- Aara sijaaraa (Kanserii sombaa, Bronchitis).
+                    <br>- Jeneetiksii (Sickle cell anemia, Hemophilia).
+                    <br>- Nyaata gadhee (Obesity, High BP).
+                    <br>- Umurii dulluma (Osteoporosis, Arthritis, Alzheimer's).
+                </li>
+            </ul>
+
+            <h2 class="section-title">6. Galmee Jechoota (Glossary)</h2>
+            <p><strong>Absorption:</strong> Xuuxuu soorataa dhiiga keessa.<br>
+            <strong>AIDS:</strong> Dhukkuba nageenya qaamaa cimsee miidhu.<br>
+            <strong>Anemia:</strong> Dhiigni/hemoglobin xiqqaachuu.<br>
+            <strong>Assimilation:</strong> Soorata gara molekiyulii addaatti jijjiiruu.<br>
+            <strong>Balanced diet:</strong> Nyaata soorata 6 sirriitti qabu.<br>
+            <strong>BMI:</strong> Ulfina (kg) / Dheerina (m²).<br>
+            <strong>Calorie:</strong> Safartuu humna nyaataa.<br>
+            <strong>Carbohydrates:</strong> Madda humna ijoo (CH2O).<br>
+            <strong>Cirrhosis:</strong> Tiruu miidhamuu (alkooliin).<br>
+            <strong>Deficiency diseases:</strong> Dhukkuba hanqina soorataa.<br>
+            <strong>Depressant:</strong> Qoricha sochii qaamaa hir'isu.<br>
+            <strong>Digestion:</strong> Nyaata daakuu.<br>
+            <strong>Disease:</strong> Qaamni akka barbaachisaa ta'een hojjechuu dadhabuu.<br>
+            <strong>Doping:</strong> Ispoortii keessatti qoricha dhorkamaa fayyadamuu.<br>
+            <strong>Drug:</strong> Wantoota sochii keemikaalaa qaamaa jijjiiran.<br>
+            <strong>Fats:</strong> Molekiyulii liipiidii humna olkaa'aa.<br>
+            <strong>Fiber:</strong> Nyaata daakamuu hin dandeenye garaa gargaaru.<br>
+            <strong>Fructose:</strong> Sukkaara fuduraa.<br>
+            <strong>Glucose:</strong> Sukkaara dhiigaa, madda humnaa.<br>
+            <strong>HIV:</strong> Vaayirasii nageenya qaamaa miidhu.<br>
+            <strong>Ingestion:</strong> Nyaata qaama keessa galchuu.<br>
+            <strong>Joule:</strong> Safartuu humnaa.<br>
+            <strong>Khat:</strong> Biqiltuu stimulantii fiixee Itiyoophiyaa.<br>
+            <strong>Kwashiorkor:</strong> Dhukkuba hanqina pirootiinii.<br>
+            <strong>Macronutrients:</strong> Baay'inaan barbaachisan (Carbs, Fats, Protein).<br>
+            <strong>Malnutrition:</strong> Nyaata gahaa dhabuu, dabaluu ykn madaallii dhabuu.<br>
+            <strong>Marasmus:</strong> Hanqina calorie fi pirootiinii.<br>
+            <strong>Micronutrients:</strong> Muraasa barbaachisan (Vitamins, Minerals).<br>
+            <strong>Nutrition:</strong> Adeemsa nyaata fudhachuu fi itti fayyadamuu.<br>
+            <strong>Obesity:</strong> Cooma qaamaa baay'isuu (BMI > 30).<br>
+            <strong>Proteins:</strong> Amino acids irraa ijaaraman, caasaa fi hojii seelii.<br>
+            <strong>Rickets:</strong> Hanqina Vitamin D, lafee laafaa.<br>
+            <strong>Scurvy:</strong> Hanqina Vitamin C.<br>
+            <strong>Stunting:</strong> Dheerina umriif gadi aanaa.<br>
+            <strong>Substance abuse:</strong> Qoricha badaa fayyadamuu.<br>
+            <strong>Vitamins:</strong> Molekiyuloota orgaanikii muraasa barbaachisan.</p>
+
+            <details>
+                <summary>Gaaffiiwwan Shaakalaa 70 fi Deebii isaanii Ilaaluuf Tuqi</summary>
+                <div class="quiz-box">
+                    <ol>
+                        <li>Nyaata maali? <br><strong>D: D. Lubbuu itti fufsiisu fi humna kennu</strong></li>
+                        <li>Madda nyaataa hin taane? <br><strong>D: A. Biyyoo (Soil)</strong></li>
+                        <li>Hojiin ijoon nyaataa? <br><strong>D: D. Humna fi soorata kennuu</strong></li>
+                        <li>Sirna nyaataa maali? <br><strong>D: D. Nyaata fudhachuu fi gara humnaatti jijjiiruu</strong></li>
+                        <li>Macronutrients maali? <br><strong>D: C. Baay'inaan barbaachisan</strong></li>
+                        <li>Micronutrient kam? <br><strong>D: C. Vitamin C</strong></li>
+                        <li>Madda humna ijoo? <br><strong>D: B. Karbohayidreeitii</strong></li>
+                        <li>Monosaccharides qofa qabu? <br><strong>D: B. Glucose, Fructose, Galactose</strong></li>
+                        <li>Disaccharide kam? <br><strong>D: C. Sucrose</strong></li>
+                        <li>Disaccharide fi monosaccharides sirriitti walsimu? <br><strong>D: C. Lactose - Glucose + Galactose</strong></li>
+                        <li>Cellulose gosa kam? <br><strong>D: D. Polysaccharide</strong></li>
+                        <li>Hojii guddaa coomaa? <br><strong>D: B. Humna kuusuu fi qaama ho'isuu</strong></li>
+                        <li>Pirootiinii maal irraa ijaarama? <br><strong>D: D. Amino acids</strong></li>
+                        <li>Guddina maashii gargaaru? <br><strong>D: C. Pirootiinii</strong></li>
+                        <li>Element pirootiinii keessa jiru garuu carbs/fats keessa hin jirre? <br><strong>D: C. Nitrogen</strong></li>
+                        <li>Hojii Vitamin A? <br><strong>D: D. Nageenya qaamaa fi ija</strong></li>
+                        <li>Ija halkanii sirriitti ilaaluuf? <br><strong>D: A. Carrot</strong></li>
+                        <li>Vitamin collagen hojjechuuf? <br><strong>D: B. Vitamin C</strong></li>
+                        <li>Hojii Calcium? <br><strong>D: C. Lafee fi ilkaan ijaaruu</strong></li>
+                        <li>Mineral thyroid gargaaru? <br><strong>D: B. Iodine</strong></li>
+                        <li>Mineral dhiiga diimaa uumuuf? <br><strong>D: A. Iron</strong></li>
+                        <li>Hojii bishaanii? <br><strong>D: D. Soorata fi culluqa geejjibuu</strong></li>
+                        <li>Soorata gahaa dhabuu irraa maaltu dhufa? <br><strong>D: B. Dhukkuboota hanqinaa</strong></li>
+                        <li>Maashii guddisuuf nyaata pirootiinii baay'ee barbaadu? <br><strong>D: B. Ispoortii hojjettoota</strong></li>
+                        <li>Mallattoo Anemia? <br><strong>D: D. Dadhabbii fi tiruu</strong></li>
+                        <li>Karbohayidreeitii hir'isuu? <br><strong>D: C. Marasmus</strong></li>
+                        <li>Garaan dhiita'e, gogaan gogaa, aariidha? <br><strong>D: D. Kwashiorkor</strong></li>
+                        <li>Madda Vitamin C gaarii? <br><strong>D: C. Fuduraa loonii (Citrus)</strong></li>
+                        <li>Madaa hin fayyine fi gumaan dhiigu? <br><strong>D: C. Vitamin C</strong></li>
+                        <li>Ulfina dheerinaaf gadi aanaa? <br><strong>D: B. Wasting</strong></li>
+                        <li>Dheerina umriif gadi aanaa? <br><strong>D: C. Stunting</strong></li>
+                        <li>Hiika underweight? <br><strong>D: B. Ulfina umriif gadi aanaa</strong></li>
+                        <li>Nyaata coomaa baay'ee, sochii dhabuu? <br><strong>D: B. Obesity</strong></li>
+                        <li>Rakkoo fayyaa obesity waliin? <br><strong>D: D. Dhiibbaa dhiigaa olkaa'aa</strong></li>
+                        <li>BMI akkamitti shallagama? <br><strong>D: B. Ulfina (kg) / dheerina² (m²)</strong></li>
+                        <li>BMI 32 qabaachuu? <br><strong>D: A. Obese</strong></li>
+                        <li>1.73m, 45kg. Ulfina dabalataa barbaachisu? <br><strong>D: D. 10.4 kg</strong></li>
+                        <li>Obesity dhoorkuuf? <br><strong>D: D. Miilaan mana barumsaatti deemuu</strong></li>
+                        <li>Daa'imni guddinni isaa miidhame? <br><strong>D: B. Stunting</strong></li>
+                        <li>Keemikaalii aara sijaaraa kanserii fidu? <br><strong>D: A. Tar</strong></li>
+                        <li>Qoricha sijaaraa addiction fidu? <br><strong>D: B. Nicotine</strong></li>
+                        <li>Hemoglobin waliin makamee O2 hir'isu? <br><strong>D: D. Carbon monoxide</strong></li>
+                        <li>Qoricha marijuana keessa jiru? <br><strong>D: D. Tetrahydrocannabinol (THC)</strong></li>
+                        <li>Tiruu alkooliin miidhu? <br><strong>D: A. Cirrhosis</strong></li>
+                        <li>Heroin akkamitti ramadama? <br><strong>D: C. Depressant</strong></li>
+                        <li>Qoricha jimaa keessa jiru? <br><strong>D: D. Cathinone</strong></li>
+                        <li>Rakkoo ilkaanii fi afaanii jimaa irraa dhufu? <br><strong>D: D. Dhukkuba gumaa fi ilkaanii</strong></li>
+                        <li>Doping maaliif dhoorkama? <br><strong>D: D. Faayidaa wal hin qixxaan argachuuf</strong></li>
+                        <li>Yoo qabamee doping? <br><strong>D: C. Bu'aa fi meedaaliin dhabuu</strong></li>
+                        <li>Qaamni akka barbaachisaa ta'een hojjechuu dadhabuu? <br><strong>D: C. Dhukkuba (Disease)</strong></li>
+                        <li>Dhukkuba daddarbu? <br><strong>D: C. Tuberculosis</strong></li>
+                        <li>Dhukkuba daddarbu hin fidin? <br><strong>D: D. Algae</strong></li>
+                        <li>Dhukkubni daddarbu akkamitti? <br><strong>D: A. Quunnamtii kallattiin</strong></li>
+                        <li>Dhukkuba daddarbu ittisuuf? <br><strong>D: B. Qulqullina qaamaa eeguu</strong></li>
+                        <li>Kaayyoo HIV? <br><strong>D: A. Seelii T</strong></li>
+                        <li>HIV akkamitti daddarba? <br><strong>D: D. Needilii waliin fayyadamuun</strong></li>
+                        <li>Hojii ART? <br><strong>D: D. Vaayirasii to'achuu fi nageenya qaamaa guddisuu</strong></li>
+                        <li>Sadarkaa HIV dhukkuba hamaa fidu? <br><strong>D: A. AIDS</strong></li>
+                        <li>Sababa TB? <br><strong>D: D. Mycobacterium tuberculosis</strong></li>
+                        <li>Qaama TBn miidhu? <br><strong>D: C. Somba</strong></li>
+                        <li>TB akkamitti daddarba? <br><strong>D: C. Haaraan (Droplets)</strong></li>
+                        <li>TB ittisuuf? <br><strong>D: D. Talaallii BCG</strong></li>
+                        <li>Vector malaria? <br><strong>D: D. Bookee Anopheles</strong></li>
+                        <li>Malaria eessatti baay'ee? <br><strong>D: D. Naannoo ho'aa fi giddu-galeessaa</strong></li>
+                        <li>Malaria to'achuuf? <br><strong>D: D. Qoricha malaria fayyadamuu</strong></li>
+                        <li>Vaayirasii COVID-19? <br><strong>D: B. SARS-CoV-2</strong></li>
+                        <li>COVID-19 ittisuuf? <br><strong>D: C. Harka dhiqachuu</strong></li>
+                        <li>Dhukkuba hin daddarbne? <br><strong>D: D. Paatojeeniin hin dhufne</strong></li>
+                        <li>Hanqina nyaataa irraa dhufu (hin daddarbne)? <br><strong>D: B. Scurvy</strong></li>
+                        <li>Jeneetiksii irraa dhufu (hin daddarbne)? <br><strong>D: C. Sickle cell anemia</strong></li>
+                    </ol>
+                </div>
+            </details>
+        </div>
+
+    </div>
+
+    <script src="../js/app.js"></script>
+</body>
+</html>

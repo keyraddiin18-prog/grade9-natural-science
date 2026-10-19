@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biology Unit 6 - Grade 9</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .quiz-box {
+            background-color: #e8f4f8;
+            border-left: 5px solid #3498db;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .quiz-box h4 { color: #2980b9; margin-bottom: 10px; }
+        .quiz-box ol { margin-left: 20px; }
+        .quiz-box li { margin-bottom: 8px; }
+        
+        details {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        summary {
+            font-weight: bold;
+            cursor: pointer;
+            color: #d35400;
+            padding: 10px;
+            background-color: #fdf2e9;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html" class="back-btn">⬅ Deebi'i (Home)</a>
+
+    <div style="text-align: center;">
+        <button id="langBtn" class="lang-btn" onclick="toggleLanguage()">Afaan Oromoo</button>
+    </div>
+
+    <a href="../pdfs/biology-unit-6.pdf" target="_blank" class="pdf-btn">📄 Download PDF (Unit 6)</a>
+
+    <div class="unit-content">
+        
+        <!-- ================== ENGLISH VERSION ================== -->
+        <div class="en-text">
+            <h2 class="section-title">1. Definitions of Common Ecological Terms</h2>
+            <ul>
+                <li><strong>Ecology:</strong> The branch of biology that studies interactions between organisms and their environment (from Greek <em>oikos</em> = home, <em>logos</em> = study).</li>
+                <li><strong>Ecosystem:</strong> All organisms in a community plus all non-living factors they interact with. A self-supporting system.</li>
+                <li><strong>Producers:</strong> Organisms that produce their own food using sunlight (e.g., plants, algae).</li>
+                <li><strong>Consumers:</strong> Organisms that cannot make their own food and eat other organisms (e.g., animals).</li>
+                <li><strong>Decomposers:</strong> Organisms that break down dead material and recycle nutrients (e.g., bacteria, fungi).</li>
+                <li><strong>Habitat:</strong> The place where an organism lives.</li>
+                <li><strong>Niche:</strong> The role or job an organism performs in its habitat.</li>
+            </ul>
+
+            <h2 class="section-title">2. Biotic and Abiotic Components</h2>
+            <ul>
+                <li><strong>Abiotic Factors:</strong> Non-living components (Sunlight, Temperature, Water, Nutrients, Oxygen, Salinity, Wind, Natural Disturbances).</li>
+                <li><strong>Biotic Factors:</strong> Living components affecting species distribution (Predators, Herbivores, Pollinators, Parasites, Pathogens, Competitors).</li>
+            </ul>
+
+            <h2 class="section-title">3. Ecological Levels of Organization</h2>
+            <p>Organism → Population (same species, same area) → Community (different species interacting) → Ecosystem (community + abiotic factors) → Biosphere (global ecosystem).</p>
+
+            <h2 class="section-title">4. Ecosystems</h2>
+            <p>Consists of biotic and abiotic components. Functioning includes Energy Flow (Sun), Nutrient Cycling (Decomposers), and Food Chains/Webs. Types:</p>
+            <ul>
+                <li><strong>Terrestrial:</strong> Found on land (Forests, Grasslands, Deserts).</li>
+                <li><strong>Aquatic:</strong> Found in water (Freshwater: lakes, ponds, rivers; Marine: oceans, coastal).</li>
+            </ul>
+
+            <h2 class="section-title">5. Biomes</h2>
+            <p>A major life zone characterized by climate and vegetation.</p>
+            <ul>
+                <li><strong>Tropical Rain Forest:</strong> Equatorial, high rainfall, high biodiversity, broad-leaf evergreen trees, intense competition for light.</li>
+                <li><strong>Desert:</strong> 30° N/S latitude, less than 10cm rain/year, extreme temperatures, cacti, nocturnal animals.</li>
+                <li><strong>Savanna:</strong> Equatorial/sub-equatorial, 30-50cm rain, warm year-round, scattered trees, fire-adapted, zebras/lions.</li>
+                <li><strong>Temperate Grassland:</strong> North America, 25-100cm rain, hot summers, cold winters, deep grass roots.</li>
+                <li><strong>Boreal Forest (Taiga):</strong> Near poles, snow precipitation, cold winters, coniferous trees, acidic soil.</li>
+                <li><strong>Temperate Broad-Leaf Forest:</strong> Mid-latitudes, 70-200cm rain, deciduous trees (shed leaves).</li>
+                <li><strong>Tundra:</strong> Covers 20% of land, cold, permafrost (frozen soil), mosses, lichens, dwarf shrubs.</li>
+                <li><strong>Freshwater:</strong> Lakes (standing water), Ponds (shallow), Rivers/Streams (moving, highly oxygenated), Wetlands (saturated soil).</li>
+                <li><strong>Marine:</strong> Oceans (Pelagic zone, Abyssal zone), Coral Reefs (most diverse), Estuaries (transition between river and sea).</li>
+            </ul>
+
+            <h2 class="section-title">6. Ecological Succession</h2>
+            <ul>
+                <li><strong>Primary Succession:</strong> Occurs where no life existed (e.g., new volcanic island). Starts with prokaryotes, lichens, and mosses. Takes thousands of years.</li>
+                <li><strong>Secondary Succession:</strong> Occurs where a disturbance removed species but left soil (e.g., abandoned farm). Faster. Starts with herbaceous species, then shrubs, then trees.</li>
+                <li><strong>Key Concepts:</strong> Climax Community (final stable stage), Facilitation (early species help later ones), Inhibition (early species hinder later ones), Tolerance (species thrive in conditions created by early ones).</li>
+            </ul>
+
+            <h2 class="section-title">7. Ecological Relationships</h2>
+            <ul>
+                <li><strong>Competition (-/-):</strong> Both harmed by limited resources (e.g., weeds vs. garden plants).</li>
+                <li><strong>Predation (+/-):</strong> Predator kills and eats prey (e.g., rotifer eating protist).</li>
+                <li><strong>Herbivory (+/-):</strong> Herbivore eats parts of a plant, causing harm but usually not death (e.g., cattle eating grass).</li>
+                <li><strong>Parasitism (+/-):</strong> Parasite derives nourishment from a host, harming it (e.g., ticks, roundworms).</li>
+                <li><strong>Mutualism (+/+):</strong> Both species benefit (e.g., termites and gut microbes, mycorrhizae).</li>
+                <li><strong>Commensalism (+/0):</strong> One benefits, the other is unaffected (e.g., cattle egrets eating flushed insects).</li>
+            </ul>
+
+            <h2 class="section-title">8. Glossary of Terms</h2>
+            <p><strong>Abiotic Factors:</strong> Non-living environmental components.<br>
+            <strong>Adaptation:</strong> Traits helping organisms survive.<br>
+            <strong>Algal Bloom:</strong> Rapid algae increase causing oxygen depletion.<br>
+            <strong>Biodiversity:</strong> Variety of living organisms.<br>
+            <strong>Biome:</strong> Large ecological area defined by climate/vegetation.<br>
+            <strong>Biosphere:</strong> Global ecological system.<br>
+            <strong>Biotic Factors:</strong> Living components of an ecosystem.<br>
+            <strong>Climax Community:</strong> Final stable community.<br>
+            <strong>Commensalism:</strong> One benefits, one unaffected.<br>
+            <strong>Competition:</strong> Both harmed by limited resources.<br>
+            <strong>Consumers:</strong> Organisms eating other organisms.<br>
+            <strong>Decomposers:</strong> Break down dead matter.<br>
+            <strong>Ecology:</strong> Study of organism-environment interactions.<br>
+            <strong>Ecosystem:</strong> Community + abiotic factors.<br>
+            <strong>Habitat:</strong> Place where an organism lives.<br>
+            <strong>Mutualism:</strong> Both species benefit.<br>
+            <strong>Niche:</strong> Role of an organism.<br>
+            <strong>Parasitism:</strong> One benefits, one harmed.<br>
+            <strong>Predation:</strong> Predator eats prey.<br>
+            <strong>Producers:</strong> Make their own food.<br>
+            <strong>Succession:</strong> Gradual species replacement over time.</p>
+
+            <details>
+                <summary>Click to View 40 Review Questions & Answers</summary>
+                <div class="quiz-box">
+                    <ol>
+                        <li>Scientists who study ecology? <br><strong>A: A. Ecologists</strong></li>
+                        <li>Organisms that produce their own food? <br><strong>A: A. Producers</strong></li>
+                        <li>Removing frogs led to insect pests. Frog's role? <br><strong>A: A. Predators</strong></li>
+                        <li>Decomposers rely on what for energy? <br><strong>A: A. Dead organic matter</strong></li>
+                        <li>Place where population lives? <br><strong>A: B. Habitat</strong></li>
+                        <li>Definition of a niche? <br><strong>A: B. The functional role an organism performs in its specific habitat</strong></li>
+                        <li>Abiotic factor in an ecosystem? <br><strong>A: C. Sunlight</strong></li>
+                        <li>Biotic factor limiting species distribution? <br><strong>A: A. Pollinators</strong></li>
+                        <li>Interbreeding organisms in same area? <br><strong>A: C. Population</strong></li>
+                        <li>Example of ecological community? <br><strong>A: D. The many types of microbes living in a human intestine</strong></li>
+                        <li>Assemblage of populations of multiple species? <br><strong>A: D. Community</strong></li>
+                        <li>All Earth's organisms plus physical space? <br><strong>A: B. The biosphere</strong></li>
+                        <li>Best description of an ecosystem? <br><strong>A: D. A self-supporting system of living organisms interacting with their environment</strong></li>
+                        <li>Distinguishes biotic and abiotic? <br><strong>A: C. Biotic components include animals and fungi, while abiotic components include sunlight and soil</strong></li>
+                        <li>Ecosystem including forests and deserts? <br><strong>A: B. Terrestrial</strong></li>
+                        <li>Direct relationship between biotic and abiotic? <br><strong>A: A. The sun providing energy for photosynthesis</strong></li>
+                        <li>Highest annual rainfall, broad-leaf evergreen? <br><strong>A: C. Tropical Rain Forest</strong></li>
+                        <li>Applies to tropical rainforest? <br><strong>A: B. High rainfall and high temperature</strong></li>
+                        <li>Widest temp range, high proportion bare ground? <br><strong>A: A. Desert</strong></li>
+                        <li>Zebras, elephants, fire-adapted trees? <br><strong>A: B. Savanna</strong></li>
+                        <li>Coniferous trees, acidic soil, low diversity? <br><strong>A: B. Boreal Forest (Taiga)</strong></li>
+                        <li>Winter below -30°C, permafrost? <br><strong>A: B. Tundra</strong></li>
+                        <li>Typical of temperate grasslands? <br><strong>A: D. Deep grass root systems that prevent soil erosion</strong></li>
+                        <li>Tundra differs from desert how? <br><strong>A: D. It has permanently frozen subsoil</strong></li>
+                        <li>Freshwater ecosystem? <br><strong>A: A. Pond</strong></li>
+                        <li>Standing bodies of water? <br><strong>A: A. Lake</strong></li>
+                        <li>Zone of ocean receiving sunlight? <br><strong>A: B. Pelagic zone</strong></li>
+                        <li>Transition between rivers and seas? <br><strong>A: C. Estuary</strong></li>
+                        <li>Soil periodically/ permanently saturated? <br><strong>A: D. Wetland</strong></li>
+                        <li>What does ecological succession describe? <br><strong>A: D. The change in species composition of an ecosystem over time</strong></li>
+                        <li>Meaning of "climax community"? <br><strong>A: D. The final, stable community resulting from succession</strong></li>
+                        <li>Volcanic island colonized by prokaryotes? <br><strong>A: A. Primary succession</strong></li>
+                        <li>Forest cleared for farming is abandoned? <br><strong>A: C. Secondary succession</strong></li>
+                        <li>Happens during competition? <br><strong>A: B. Both species are harmed by limited resource use</strong></li>
+                        <li>Weeds among flowers reducing growth? <br><strong>A: B. Competition</strong></li>
+                        <li>Hawk hunts and eats a rabbit? <br><strong>A: A. Predation</strong></li>
+                        <li>Goat grazes on shrubs but doesn't kill? <br><strong>A: B. Herbivory</strong></li>
+                        <li>Tick feeds on dog's blood? <br><strong>A: A. Parasitism</strong></li>
+                        <li>Fungi in mycorrhizae provide nutrients, receive carbs? <br><strong>A: B. Mutualism</strong></li>
+                        <li>Cattle egrets eat insects disturbed by cattle? <br><strong>A: D. Commensalism</strong></li>
+                    </ol>
+                </div>
+            </details>
+        </div>
+
+        <!-- ================== AFAAN OROMOO VERSION ================== -->
+        <div class="om-text">
+            <h2 class="section-title">1. Hiika Jechoota Ekoolojii Ijoo</h2>
+            <ul>
+                <li><strong>Ekoolojii (Ecology):</strong> Damee saayinsii lubbuu kan hariiroo organiizimoota fi naannoo isaanii qoratu (jecha Giriikii <em>oikos</em> = mana, <em>logos</em> = qorannoo irraa).</li>
+                <li><strong>Ekosistemii (Ecosystem):</strong> Organiizimoota hawaasa tokko keessa jiran hunda fi wantoota lubbuu hin qabne isaan waliin hojjetan. Sirna of danda'e.</li>
+                <li><strong>Oomishitoota (Producers):</strong> Organiizimoota humna aduu fayyadamuun nyaata ofii isaa oomishan (fkn: biqiltuu, algae).</li>
+                <li><strong>Fayyadamtoota (Consumers):</strong> Organiizimoota nyaata ofii isaa oomishuu hin dandeenye, kanneen organiizimii biraa nyaatan (fkn: bineensota).</li>
+                <li><strong>Balleessitoota (Decomposers):</strong> Organiizimoota wantoota du'an daakanii soorata deebisan (fkn: baakteeriyaa, faanjii).</li>
+                <li><strong>Bakka Jireenyaa (Habitat):</strong> Bakka organiizimii tokko itti jiraatu.</li>
+                <li><strong>Gahee (Niche):</strong> Hojii ykn gahee organiizimii tokko bakka jireenya isaa keessatti raawwatu.</li>
+            </ul>
+
+            <h2 class="section-title">2. Wantoota Lubbuu Qaban fi Hin Qabne (Biotic & Abiotic)</h2>
+            <ul>
+                <li><strong>Wantoota Lubbuu Hin Qabne (Abiotic Factors):</strong> Ifa aduu, Ho'ina, Bishaan, Soorata, Oksijiinii, Soogidda (salinity), Bubbee, Balaawwa uumamaa.</li>
+                <li><strong>Wantoota Lubbuu Qaban (Biotic Factors):</strong> Addaan nyaattoota, Nyaattota biqiltuu, Pollinators, Paraasayitoota, Paatojeenoota, Dorgomtoota.</li>
+            </ul>
+
+            <h2 class="section-title">3. Sadarkaalee Ekoolojii</h2>
+            <p>Organiizimii → Baay'ina (Population) (gosa tokko, bakka tokko) → Hawaasa (Community) (gosa adda addaa waliin jiraatan) → Ekosistemii (hawaasa + wantoota lubbuu hin qabne) → Baayosfeerii (Biosphere) (ekosistemii addunyaa hunda).</p>
+
+            <h2 class="section-title">4. Ekosistemoota</h2>
+            <p>Wantoota lubbuu qaban fi hin qabne of keessatti qabata. Sochii isaa: Yaa'a humnaa (Aduu), Naanna'iinsa soorataa (Balleessitoota), Saffisa nyaataa. Gosa isaa:</p>
+            <ul>
+                <li><strong>Lafa Irraa (Terrestrial):</strong> Bosona, Marga, Gammoojjii.</li>
+                <li><strong>Bishaan Keessaa (Aquatic):</strong> Bishaan curee (haroo, laga) fi Bishaan soogidda (galaana, qarqara galaanaa).</li>
+            </ul>
+
+            <h2 class="section-title">5. Biyoomota (Biomes)</h2>
+            <p>Naannoo guddaa qilleensa fi biqiltootaan adda ba'u.</p>
+            <ul>
+                <li><strong>Tropical Rain Forest:</strong> Qarqara lafaa, roobni baay'ee, lubbuun adda addaa, biqiltoonni baala bal'aa, dorgommiin ifaaf godhamu cimaa.</li>
+                <li><strong>Gammoojjii (Desert):</strong> Roobni < 10cm, ho'inni cimaa, biqiltoonni cacti, bineensonni halkan socho'an.</li>
+                <li><strong>Savanna:</strong> Roobni 30-50cm, ho'ina wal irra hin deebine, muka muraasa, ibidda dandamatu, zebra fi leenca.</li>
+                <li><strong>Temperate Grassland:</strong> Roobni 25-100cm, hiddi margaa dheeraa, bokkaa ittisuuf gargaara.</li>
+                <li><strong>Boreal Forest (Taiga):</strong> Qarqara koolaa, roobni cabbii, biqiltoonni coniferous, biyyoo asiidii.</li>
+                <li><strong>Temperate Broad-Leaf Forest:</strong> Giddu-galeessa, roobni 70-200cm, biqiltoonni baala gadi lakkisan (deciduous).</li>
+                <li><strong>Tundra:</strong> Lafa 20% qabata, qorra cimaa, permafrost (biyyoo yeroo hunda cabbii), mosses, lichens.</li>
+                <li><strong>Bishaan Curee (Freshwater):</strong> Haroo (bishaan dhaabbataa), Laga (socho'aa, O2 baay'ee), Wetlands (biyyoo bishaan itti baay'ate).</li>
+                <li><strong>Bishaan Soogidda (Marine):</strong> Galaana, Coral Reefs (baay'ee adda addaa), Estuaries (laga fi galaana walitti makamu).</li>
+            </ul>
+
+            <h2 class="section-title">6. Itti Fufiinsa Ekoolojii (Ecological Succession)</h2>
+            <ul>
+                <li><strong>Primary Succession (Jalqabaa):</strong> Bakka lubbuun hin jiraanne (fkn: odola volcano). Prokaryotes, lichens fi mosses irraa jalqaba. Waggoota kumaatama fudhata.</li>
+                <li><strong>Secondary Succession (Lammaffaa):</strong> Bakka balaa wantoota jiran balleesse garuu biyyoo hafe (fkn: qonna dhiifame). Saffisaan raawwata.</li>
+                <li><strong>Yaadota Ijoo:</strong> Climax Community (sadarkaa dhumaa), Facilitation (gosa duraa kan boodaa gargaaru), Inhibition (gosa duraa kan boodaa dhorku), Tolerance (haala uumame keessa jiraachuu).</li>
+            </ul>
+
+            <h2 class="section-title">7. Hariiroo Ekoolojii</h2>
+            <ul>
+                <li><strong>Dorgommii (Competition -/-):</strong> Lamaanuu soorata dhabuun miidhamu (fkn: aramaa fi biqiltuu).</li>
+                <li><strong>Addaan Nyaachuu (Predation +/-):</strong> Addaan nyaataan waan nyaatamu ajjeesee nyaata (fkn: hawk fi hantuuta).</li>
+                <li><strong>Nyaata Biqiltuu (Herbivory +/-):</strong> Bineensi biqiltuu nyaachuun miidha, garuu ajjeesuu hin danda'u (fkn: loon marga nyaachuu).</li>
+                <li><strong>Paraasitizimii (Parasitism +/-):</strong> Paraasayitiin qaama kaan irraa nyaata, miidha (fkn: silmii fi raammoo).</li>
+                <li><strong>Mutualism (+/+):</strong> Lamaanuu faayidaa argatu (fkn: mycorrhizae fi biqiltuu).</li>
+                <li><strong>Commensalism (+/0):</strong> Tokko faayidaa argata, inni kaan hin miidhamu (fkn: simbirroon loon hordoftee ilbiisa nyaachuu).</li>
+            </ul>
+
+            <h2 class="section-title">8. Galmee Jechoota (Glossary)</h2>
+            <p><strong>Abiotic Factors:</strong> Wantoota lubbuu hin qabne.<br>
+            <strong>Adaptation:</strong> Amaloota lubbuun jiraachuuf gargaaran.<br>
+            <strong>Algal Bloom:</strong> Baay'ina algae O2 hir'isu.<br>
+            <strong>Biodiversity:</strong> Adda addummaa lubbuu.<br>
+            <strong>Biome:</strong> Naannoo ekoolojii guddaa.<br>
+            <strong>Biosphere:</strong> Sirna ekoolojii addunyaa.<br>
+            <strong>Biotic Factors:</strong> Wantoota lubbuu qaban.<br>
+            <strong>Climax Community:</strong> Hawaasa dhumaa tasgabbii qabu.<br>
+            <strong>Commensalism:</strong> Tokko faayidaa argata, inni kaan hin miidhamu.<br>
+            <strong>Competition:</strong> Lamaanuu miidhamuun dorgomuu.<br>
+            <strong>Consumers:</strong> Organiizimii biraa nyaatan.<br>
+            <strong>Decomposers:</strong> Wantoota du'an daakan.<br>
+            <strong>Ecology:</strong> Qorannoo hariiroo lubbuu fi naannoo.<br>
+            <strong>Ecosystem:</strong> Hawaasa + wantoota lubbuu hin qabne.<br>
+            <strong>Habitat:</strong> Bakka jireenyaa.<br>
+            <strong>Mutualism:</strong> Lamaanuu faayidaa argatu.<br>
+            <strong>Niche:</strong> Gahee organiizimii.<br>
+            <strong>Parasitism:</strong> Tokko faayidaa argata, inni kaan miidhama.<br>
+            <strong>Predation:</strong> Addaan nyaachuu.<br>
+            <strong>Producers:</strong> Nyaata ofii oomishan.<br>
+            <strong>Succession:</strong> Jijjiirama suuta ta'e gosa lubbuu naannoo tokko keessatti.</p>
+
+            <details>
+                <summary>Gaaffiiwwan Shaakalaa 40 fi Deebii isaanii Ilaaluuf Tuqi</summary>
+                <div class="quiz-box">
+                    <ol>
+                        <li>Ekoolojii qoratan maqaa maaliin waamamu? <br><strong>D: A. Ekoolojistii</strong></li>
+                        <li>Nyaata ofii oomishan maqaa maaliin waamamu? <br><strong>D: A. Oomishitoota</strong></li>
+                        <li>Raachituu balleessuu irraa ilbiisni dabale. Raachituun gahee maalii ture? <br><strong>D: A. Addaan nyaattoota</strong></li>
+                        <li>Balleessitoonni humna maal irraa argatu? <br><strong>D: A. Wantoota du'an irraa</strong></li>
+                        <li>Bakka baay'inni jiraatu maali? <br><strong>D: B. Habitat (Bakka jireenyaa)</strong></li>
+                        <li>Hiika niche maali? <br><strong>D: B. Hojii organiizimii tokko bakka jireenya isaatti raawwatu</strong></li>
+                        <li>Abiotic factor kam? <br><strong>D: C. Ifa aduu</strong></li>
+                        <li>Biotic factor raabsa gosa daangessu? <br><strong>D: A. Pollinators</strong></li>
+                        <li>Organiizimoota saalaan wal hormaatan bakka tokkotti jiraatan? <br><strong>D: C. Baay'ina (Population)</strong></li>
+                        <li>Fakkeenya hawaasa ekoolojii? <br><strong>D: D. Gosa mikroobii mara garaa namaa keessa jiraatu</strong></li>
+                        <li>Baay'ina gosa adda addaa bakka tokkotti? <br><strong>D: D. Hawaasa (Community)</strong></li>
+                        <li>Organiizimii addunyaa fi bakka jireenya isaanii? <br><strong>D: B. Baayosfeerii</strong></li>
+                        <li>Ibsa ekosistemii gaarii? <br><strong>D: D. Sirna of danda'e kan lubbuun naannoo ishee waliin hojjattu</strong></li>
+                        <li>Biotic fi Abiotic adda baasu? <br><strong>D: C. Biotic bineensota fi faanjii, Abiotic ifa aduu fi biyyoo</strong></li>
+                        <li>Ekosistemii bosona fi gammoojjii qabu? <br><strong>D: B. Lafa irraa (Terrestrial)</strong></li>
+                        <li>Hariiroo kallattii biotic fi abiotic? <br><strong>D: A. Aduun humna photosynthesisiif kennuu</strong></li>
+                        <li>Roobni baay'ee, biqiltoonni baala bal'aa? <br><strong>D: C. Bosona Roobaa Ho'aa</strong></li>
+                        <li>Bosona roobaa ho'aa ilaalchisee sirrii? <br><strong>D: B. Roobni baay'ee fi ho'inni olkaa'aa</strong></li>
+                        <li>Ho'ina adda addaa, lafa duwwaa baay'ee? <br><strong>D: A. Gammoojjii</strong></li>
+                        <li>Zebra, arba, muka ibidda dandamatan? <br><strong>D: B. Savanna</strong></li>
+                        <li>Muka coniferous, biyyoo asiidii, adda addummaa gadii? <br><strong>D: B. Bosona Boreal (Taiga)</strong></li>
+                        <li>Qorra -30°C, permafrost? <br><strong>D: B. Tundra</strong></li>
+                        <li>Amala margaa qilleensa giddu-galeessaa? <br><strong>D: D. Hiddi margaa dheeraa dhiqaa ittisu</strong></li>
+                        <li>Tundra gammoojjiirraa maaliin adda ba'a? <br><strong>D: D. Lafa jalaa yeroo hunda cabbii qabaachuun</strong></li>
+                        <li>Ekosistemii bishaan curee? <br><strong>D: A. Haroo xiqqaa (Pond)</strong></li>
+                        <li>Bishaan dhaabbataa? <br><strong>D: A. Haroo (Lake)</strong></li>
+                        <li>Zoonii galaanaa ifa aduu argatu? <br><strong>D: B. Pelagic zone</strong></li>
+                        <li>Laga fi galaana walitti makamu? <br><strong>D: C. Estuary</strong></li>
+                        <li>Biyyoon yeroo muraasaaf bishaan itti baay'atu? <br><strong>D: D. Wetland</strong></li>
+                        <li>Itti fufiinsi ekoolojii maal ibsa? <br><strong>D: D. Jijjiirama gosa lubbuu yeroo waliin</strong></li>
+                        <li>Hiika "climax community"? <br><strong>D: D. Hawaasa dhumaa tasgabbii qabu</strong></li>
+                        <li>Odola volcano prokaryotes fi lichens irraa? <br><strong>D: A. Primary succession</strong></li>
+                        <li>Bosonni qonnaaf qalamee dhiifame? <br><strong>D: C. Secondary succession</strong></li>
+                        <li>Dorgommii keessatti maal ta'a? <br><strong>D: B. Lamaanuu soorata dhabuun miidhamu</strong></li>
+                        <li>Aramaan biqiltuu guddina hir'isu? <br><strong>D: B. Dorgommii (Competition)</strong></li>
+                        <li>Hawk hantuuta ajjeesee nyaachuu? <br><strong>D: A. Predation</strong></li>
+                        <li>Reen jiidha nyaattu garuu hin ajjeesu? <br><strong>D: B. Herbivory</strong></li>
+                        <li>Silmii dhiiga saree xuuxuu? <br><strong>D: A. Parasitism</strong></li>
+                        <li>Faanjiin mycorrhizae soorata kennu, carbohydrates fudhata? <br><strong>D: B. Mutualism</strong></li>
+                        <li>Simbirroon loon hordoftee ilbiisa nyaachuu? <br><strong>D: D. Commensalism</strong></li>
+                    </ol>
+                </div>
+            </details>
+        </div>
+
+    </div>
+
+    <script src="../js/app.js"></script>
+</body>
+</html>
