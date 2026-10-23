@@ -62,7 +62,18 @@ function searchUnits() {
 }
 
 // ==========================================
-// 4. Progress Bar (Hamma Barnootaa Hordofuu)
+/
+
+
+// Service Worker Hojjechiisuu (Offline taasisuuf)
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        // Hubachiisa: '/grade9-natural-science/sw.js' jechuun iddoo website kee GitHub irratti argamu ibsa
+        navigator.serviceWorker.register('/grade9-natural-science/sw.js')
+        .then(reg => console.log('Service Worker sirriitti hojjeteera!'))
+        .catch(err => console.log('Service Worker dogoggore: ', err));
+    });
+}/ 4. Progress Bar (Hamma Barnootaa Hordofuu)
 // ==========================================
 // Hubachiisa: Kun yeroo ammaa 0% agarsiisa. 
 // Booda (Sadarkaa 2ffaa irratti) yeroo barataan unit xumuru itti dabalna.
@@ -85,3 +96,14 @@ function updateProgressBar() {
 document.addEventListener('DOMContentLoaded', () => {
     updateProgressBar();
 });
+
+
+// Service Worker Hojjechiisuu (Offline taasisuuf)
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        // Hubachiisa: '/grade9-natural-science/sw.js' jechuun iddoo website kee GitHub irratti argamu ibsa
+        navigator.serviceWorker.register('/grade9-natural-science/sw.js')
+        .then(reg => console.log('Service Worker sirriitti hojjeteera!'))
+        .catch(err => console.log('Service Worker dogoggore: ', err));
+    });
+}
